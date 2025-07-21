@@ -170,7 +170,7 @@ body {
 }
 
 .hero-headline {
-  font-size: clamp(3.5rem, 9vw, 7rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   font-family: "arbotek", sans-serif;
   font-weight: 900;
   line-height: 1.1;
@@ -197,11 +197,11 @@ body {
 }
 
 .content-section#team {
-  background: var(--light-gray);
+  background: white;
 }
 
 .content-section#events {
-  background: white;
+  background: var(--light-gray);
 }
 
 .content-section#pillars {
@@ -718,6 +718,20 @@ body {
   background: white;
   padding: 6rem 0;
   color: var(--text-color);
+}
+
+.breakdown-section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.breakdown-section-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-family: "arbotek", sans-serif;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  margin: 0;
 }
 
 .breakdown-item {

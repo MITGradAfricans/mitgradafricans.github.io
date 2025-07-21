@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ - MIT African Graduate Association</title>
+    <title>Our Events - MIT African Graduate Association</title>
     <link rel="stylesheet" href="styles-lusaka.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;900&display=swap"
@@ -38,81 +38,53 @@
           <a href="about-lusaka.html" class="nav-link">About Us</a>
           <a href="#blog" class="nav-link">Blog</a>
           <a href="resources.html" class="nav-link">Resources</a>
-          <a href="events-lusaka.html" class="nav-link">Our Events</a>
-          <a href="faq-lusaka.html" class="nav-link active">FAQ</a>
+          <a href="events-lusaka.html" class="nav-link active">Our Events</a>
+          <a href="faq-lusaka.html" class="nav-link">FAQ</a>
         </div>
       </nav>
 
       <!-- Hero Content -->
       <div class="hero-content">
-        <h2 class="hero-headline">Frequently Asked Questions</h2>
+        <h2 class="hero-headline">Our Events</h2>
       </div>
     </section>
 
-    <!-- FAQ Content -->
-    <section class="faq-content">
-      <div class="faq-container">
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span class="faq-bullet">&bull;</span> Who can join the MIT
-              African Graduate Association?
-              <span class="faq-arrow">▼</span>
-            </button>
-            <div class="faq-answer" style="display: none">
-              Membership is open to all MIT graduate students who identify with
-              or are interested in Africa, regardless of nationality or
-              background.
+    <!-- Events Content -->
+    <section class="about-content">
+      <div class="about-container">
+        <!-- Events Section -->
+        <div class="about-section">
+          <div class="section-content">
+            <div class="text-block">
+              <h2>Our Events</h2>
+              <p>
+                Join us for cultural celebrations, professional development
+                workshops, and networking opportunities that bring our community
+                together.
+              </p>
+
+              <!-- View Gallery Button -->
+              <div class="gallery-button-container">
+                <a href="#" class="btn btn-primary btn-gallery"
+                  >View Our Gallery</a
+                >
+              </div>
+            </div>
+
+            <!-- Google Calendar Embed -->
+            <div class="calendar-container">
+              <div class="calendar-wrapper">
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?src=c4982583a55c936d9870f95ef5ec78c96157d1b73b9941a4d652a3f9142b0301%40group.calendar.google.com&ctz=America%2FNew_York"
+                  style="border: 0"
+                  width="100%"
+                  height="500"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>
+              </div>
             </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span class="faq-bullet">&bull;</span> How can I get involved in
-              AGA events?
-              <span class="faq-arrow">▼</span>
-            </button>
-            <div class="faq-answer" style="display: none">
-              You can join our mailing list, follow us on social media, or check
-              our website for upcoming events and opportunities to participate.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span class="faq-bullet">&bull;</span> Does AGA offer mentorship
-              programs?
-              <span class="faq-arrow">▼</span>
-            </button>
-            <div class="faq-answer" style="display: none">
-              Yes! We have a mentorship program that connects new and
-              prospective students with experienced members and alumni for
-              guidance and support.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              <span class="faq-bullet">&bull;</span> How can I support AGA's
-              mission?
-              <span class="faq-arrow">▼</span>
-            </button>
-            <div class="faq-answer" style="display: none">
-              You can support us by attending our events, volunteering your
-              time, making a donation, or spreading awareness about our
-              organization within the MIT community.
-            </div>
-          </div>
-        </div>
-        <div class="faq-contact">
-          <p>
-            If your question is not on the list, feel free to fill out this form
-            to send us your specific question:
-            <a
-              href="https://forms.gle/agNbPNpu5UrkWhmw9"
-              target="_blank"
-              rel="noopener"
-              class="faq-contact-link"
-              >Contact Form</a
-            >
-          </p>
         </div>
       </div>
     </section>
@@ -199,20 +171,6 @@
         </p>
       </div>
     </footer>
-
-    <script>
-      document.querySelectorAll(".faq-question").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          const answer = this.nextElementSibling;
-          const expanded = this.getAttribute("aria-expanded") === "true";
-          this.setAttribute("aria-expanded", !expanded);
-          answer.style.display = expanded ? "none" : "block";
-          // Arrow rotation
-          const arrow = this.querySelector(".faq-arrow");
-          if (arrow) arrow.textContent = expanded ? "▼" : "▲";
-        });
-      });
-    </script>
 
     <script src="script.js"></script>
   </body>

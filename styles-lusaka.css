@@ -189,6 +189,23 @@ body {
 /* Content Sections */
 .content-section {
   padding: 8rem 0;
+  background: white;
+}
+
+.content-section:nth-child(even) {
+  background: var(--light-gray);
+}
+
+.content-section#team {
+  background: var(--light-gray);
+}
+
+.content-section#events {
+  background: white;
+}
+
+.content-section#pillars {
+  background: white;
 }
 
 .section-content {

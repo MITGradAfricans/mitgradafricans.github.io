@@ -434,7 +434,7 @@ body {
 }
 
 .team-member:hover .member-info h3 {
-  margin-bottom: 0.2rem;
+  margin: 0 0 0.2rem 1.2rem;
 }
 
 .team-member:hover .member-info .member-role,
@@ -452,6 +452,14 @@ body {
   color: var(--medium-brown);
   font-weight: 600;
   margin-bottom: 0.5rem;
+  margin-left: 1.2rem;
+}
+
+.member-info .member-dept {
+  color: var(--medium-brown);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-left: 1.2rem;
 }
 
 .member-info .member-country {
@@ -459,6 +467,7 @@ body {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
+  margin-left: 1.2rem;
 }
 
 .member-socials {
@@ -620,7 +629,7 @@ body {
 }
 
 .cta-section::before {
-  content: "Nigeria · South Africa · Kenya · Egypt · Morocco · Algeria · Ghana · Ethiopia · Tanzania · Uganda · Sudan · Angola · Mozambique · Madagascar · Cameroon · Niger · Mali · Burkina Faso · Chad · Somalia · Senegal · Zimbabwe · Guinea · Rwanda · Benin · Burundi · Tunisia · Libya · Sierra Leone · Togo · Eritrea · Central African Republic · Liberia · Mauritania · Gambia · Botswana · Namibia · Lesotho · Gabon · Congo · Equatorial Guinea · Sao Tome and Principe · Seychelles · Comoros · Mauritius · Eswatini · Djibouti · Cabo Verde · Guinea-Bissau · Democratic Republic of the Congo · Côte d'Ivoire · Zambia · Malawi · South Sudan · Nigeria · South Africa · Kenya · Egypt · Morocco · Algeria · Ghana · Ethiopia · Tanzania · Uganda · Sudan · Angola · Mozambique · Madagascar · Cameroon · Niger · Mali · Burkina Faso · Chad · Somalia · Senegal · Zimbabwe · Guinea · Rwanda · Benin · Burundi · Tunisia · Libya · Sierra Leone · Togo · Eritrea · Central African Republic · Liberia · Mauritania · Gambia · Botswana · Namibia · Lesotho · Gabon · Congo · Equatorial Guinea · Sao Tome and Principe · Seychelles · Comoros · Mauritius · Eswatini · Djibouti · Cabo Verde · Guinea-Bissau · Democratic Republic of the Congo · Côte d'Ivoire · Zambia · Malawi · South Sudan";
+  content: "Nigeria · South Africa · Kenya · Egypt · Morocco · Algeria · Ghana · Ethiopia · Tanzania · Uganda · Sudan · Angola · Mozambique · Madagascar · Cameroon · Niger · Mali · Burkina Faso · Chad · Somalia · Senegal · Zimbabwe · Guinea · Rwanda · Benin · Burundi · Tunisia · Libya · Sierra Leone · Togo · Eritrea · Central African Republic · Liberia · Mauritania · Gambia · Botswana · Namibia · Lesotho · Gabon · Congo · Equatorial Guinea · Sao Tome and Principe · Seychelles · Comoros · Mauritius · Eswatini · Djibouti · Cabo Verde · Guinea-Bissau · Democratic Republic of the Congo · Côte d'Ivoire · Zambia · Malawi · South Sudan";
   position: absolute;
   top: 0;
   left: 0;
@@ -788,6 +797,7 @@ body {
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
+  margin-top: 0;
 }
 
 .footer-section p {
@@ -795,17 +805,18 @@ body {
   margin-bottom: 1rem;
   line-height: 1.6;
   font-size: 1rem;
+  margin-top: 0;
 }
 
 .footer-aga-logo {
-  height: 60px;
+  height: 50px;
   width: auto;
   margin-bottom: 1.5rem;
   display: block;
 }
 
 .footer-mit-logo {
-  height: 40px;
+  height: 50px;
   width: auto;
   margin-bottom: 1.5rem;
   display: block;
@@ -1031,6 +1042,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .calendar-wrapper {
@@ -1040,13 +1052,14 @@ body {
 
 .calendar-wrapper iframe {
   width: 100%;
-  height: 500px;
+  height: 700px;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-button-container {
-  margin-top: 2rem;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .btn-gallery {

@@ -252,7 +252,7 @@ body {
 }
 
 .content-section:nth-child(even) {
-  background: var(--light-gray);
+  background: #f5f5f5;
 }
 
 .content-section#team {
@@ -960,7 +960,7 @@ body {
 
 /* Mission Section */
 .mission-section {
-  background: var(--aga-yellow);
+  background: var(--dark-gray);
   padding: 6rem 0;
   color: var(--black);
 }
@@ -1101,15 +1101,28 @@ body {
   letter-spacing: 0.5px;
 }
 
-.breakdown-item:nth-child(2) .breakdown-title {
+.breakdown-item:nth-child(1) .breakdown-title {
   color: var(--aga-red);
 }
 
-.breakdown-item:nth-child(3) .breakdown-title {
+.breakdown-item:nth-child(2) .breakdown-title {
   color: var(--aga-yellow);
 }
 
-.breakdown-item:nth-child(4) .breakdown-title {
+.breakdown-item:nth-child(3) .breakdown-title {
+  color: var(--aga-green);
+}
+
+/* Specific rules for pillars in about section */
+.about-section .breakdown-item:nth-child(3) .breakdown-title {
+  color: var(--aga-red);
+}
+
+.about-section .breakdown-item:nth-child(4) .breakdown-title {
+  color: var(--aga-yellow);
+}
+
+.about-section .breakdown-item:nth-child(5) .breakdown-title {
   color: var(--aga-green);
 }
 
@@ -1351,7 +1364,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--text-color);
+  color: var(--aga-red);
   font-family: "arbotek", sans-serif;
 }
 
@@ -1664,7 +1677,7 @@ body {
 
 .event-date {
   background: var(--medium-brown);
-  color: var(--black);
+  color: white;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;

@@ -7,16 +7,22 @@
 
 :root {
   --mit-black: #000000;
-  --aga-red: #8b4513;
-  --aga-yellow: #d2b48c;
-  --aga-green: #696969;
+  --aga-red: #d62828;
+  --aga-yellow: #f7b32b;
+  --aga-green: #3b863b;
   --text-color: #333333;
   --light-gray: #f5f5f5;
   --border-color: #e0e0e0;
   --white: #ffffff;
   --black: #000000;
-  --medium-brown: #d2b48c;
+  --medium-brown: #f7b32b;
   --dark-gray: #404040;
+  --aga-red-light: #e63946;
+  --aga-yellow-light: #f8c95d;
+  --aga-green-light: #4a9e4a;
+  --aga-red-dark: #b91c1c;
+  --aga-yellow-dark: #e6a000;
+  --aga-green-dark: #2d5a2d;
 }
 
 body {
@@ -116,7 +122,15 @@ body {
 }
 
 .brand-accent {
-  color: var(--medium-brown);
+  color: var(--aga-red);
+}
+
+.brand-accent-yellow {
+  color: var(--aga-yellow);
+}
+
+.brand-accent-green {
+  color: var(--aga-green);
 }
 
 .hero-nav.fixed .nav-brand .brand-name {
@@ -159,6 +173,36 @@ body {
   background: var(--aga-yellow);
 }
 
+.nav-red {
+  border-bottom: none;
+  transition: all 0.3s ease;
+}
+
+.nav-red:hover {
+  color: var(--aga-red);
+  border-bottom: 2px solid var(--aga-red);
+}
+
+.nav-yellow {
+  border-bottom: none;
+  transition: all 0.3s ease;
+}
+
+.nav-yellow:hover {
+  color: var(--aga-yellow);
+  border-bottom: 2px solid var(--aga-yellow);
+}
+
+.nav-green {
+  border-bottom: none;
+  transition: all 0.3s ease;
+}
+
+.nav-green:hover {
+  color: var(--aga-green);
+  border-bottom: 2px solid var(--aga-green);
+}
+
 /* Hero Content */
 .hero-content {
   position: relative;
@@ -179,8 +223,18 @@ body {
 }
 
 .hero-headline .highlight {
-  position: relative;
-  color: var(--medium-brown);
+  color: var(--aga-red);
+  font-weight: 900;
+}
+
+.hero-headline .highlight-yellow {
+  color: var(--aga-yellow);
+  font-weight: 900;
+}
+
+.hero-headline .highlight-green {
+  color: var(--aga-green);
+  font-weight: 900;
 }
 
 /* Remove old animation styles that are no longer needed */
@@ -198,7 +252,7 @@ body {
 }
 
 .content-section:nth-child(even) {
-  background: var(--light-gray);
+  background: #f5f5f5;
 }
 
 .content-section#team {
@@ -242,7 +296,7 @@ body {
 .text-block p {
   font-size: 1.2rem;
   line-height: 1.7;
-  color: #666;
+  color: var(--dark-gray);
   margin-bottom: 2rem;
 }
 
@@ -303,10 +357,34 @@ body {
   margin-bottom: 1rem;
 }
 
+.stat-item:nth-child(1) .stat-number {
+  color: var(--aga-red);
+}
+
+.stat-item:nth-child(2) .stat-number {
+  color: var(--aga-yellow);
+}
+
+.stat-item:nth-child(3) .stat-number {
+  color: var(--aga-green);
+}
+
 .stat-label {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--dark-gray);
   font-weight: 500;
+}
+
+.stat-item:nth-child(1) .stat-label {
+  color: var(--aga-red);
+}
+
+.stat-item:nth-child(2) .stat-label {
+  color: var(--aga-yellow);
+}
+
+.stat-item:nth-child(3) .stat-label {
+  color: var(--aga-green);
 }
 
 /* Enhanced Team Grid */
@@ -326,8 +404,8 @@ body {
 }
 
 .team-member {
-  background: #f8fafc;
-  color: #181818;
+  background: var(--light-gray);
+  color: var(--text-color);
   padding: 0;
   border-radius: 18px;
   text-align: left;
@@ -349,15 +427,14 @@ body {
 
 .member-photo {
   width: 100%;
-  aspect-ratio: 1/1.1;
-  overflow: hidden;
+  height: 300px;
   position: relative;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f5f5f5;
+  background: var(--light-gray);
 }
 
 .member-photo img {
@@ -449,21 +526,21 @@ body {
 }
 
 .member-info .member-role {
-  color: var(--medium-brown);
+  color: var(--aga-red);
   font-weight: 600;
   margin-bottom: 0.5rem;
   margin-left: 1.2rem;
 }
 
 .member-info .member-dept {
-  color: var(--medium-brown);
+  color: var(--aga-yellow);
   font-weight: 600;
   margin-bottom: 0.5rem;
   margin-left: 1.2rem;
 }
 
 .member-info .member-country {
-  color: var(--medium-brown);
+  color: var(--aga-green);
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -611,7 +688,7 @@ body {
 }
 
 .event-details p {
-  color: #666;
+  color: var(--dark-gray);
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }
@@ -636,7 +713,7 @@ body {
   right: 0;
   height: 30px;
   background: var(--dark-gray);
-  color: var(--medium-brown);
+  color: var(--aga-yellow);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     sans-serif;
   font-size: 1.1rem;
@@ -658,7 +735,7 @@ body {
   right: 0;
   height: 30px;
   background: var(--dark-gray);
-  color: var(--medium-brown);
+  color: var(--aga-yellow);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     sans-serif;
   font-size: 1.1rem;
@@ -747,12 +824,12 @@ body {
 }
 
 .btn-primary {
-  background: var(--medium-brown);
-  color: var(--black);
+  background: var(--aga-red);
+  color: var(--white);
 }
 
 .btn-primary:hover {
-  background: var(--dark-gray);
+  background: var(--aga-red-dark);
   color: var(--white);
   transform: translateY(-2px);
 }
@@ -764,8 +841,20 @@ body {
 }
 
 .btn-secondary:hover {
-  background: white;
+  background: var(--white);
   color: var(--aga-green);
+  transform: translateY(-2px);
+}
+
+.btn-learn-more {
+  background: var(--aga-green);
+  color: var(--white);
+  border-color: var(--aga-green);
+}
+
+.btn-learn-more:hover {
+  background: var(--aga-green-dark);
+  color: var(--white);
   transform: translateY(-2px);
 }
 
@@ -792,7 +881,7 @@ body {
 }
 
 .footer-section h3 {
-  color: var(--medium-brown);
+  color: var(--aga-yellow);
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
@@ -801,7 +890,7 @@ body {
 }
 
 .footer-section p {
-  color: #ccc;
+  color: #e0e0e0;
   margin-bottom: 1rem;
   line-height: 1.6;
   font-size: 1rem;
@@ -824,14 +913,14 @@ body {
 }
 
 .footer-accessibility {
-  color: #ccc;
+  color: #e0e0e0;
   text-decoration: underline;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
 .footer-accessibility:hover {
-  color: var(--medium-brown);
+  color: var(--aga-yellow);
 }
 
 .social-links {
@@ -854,15 +943,15 @@ body {
 }
 
 .social-links a:hover {
-  background: var(--medium-brown);
+  background: var(--aga-yellow);
   transform: scale(1.1);
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid #333;
-  color: #999;
+  border-top: 1px solid var(--dark-gray);
+  color: #b0b0b0;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 2rem;
@@ -871,7 +960,7 @@ body {
 
 /* Mission Section */
 .mission-section {
-  background: var(--medium-brown);
+  background: var(--dark-gray);
   padding: 6rem 0;
   color: var(--black);
 }
@@ -902,6 +991,10 @@ body {
   color: var(--white);
   margin: 0;
   margin-bottom: 4rem;
+}
+
+.mission-title .highlight {
+  color: var(--aga-red);
 }
 
 .mission-description {
@@ -1008,10 +1101,35 @@ body {
   letter-spacing: 0.5px;
 }
 
+.breakdown-item:nth-child(1) .breakdown-title {
+  color: var(--aga-red);
+}
+
+.breakdown-item:nth-child(2) .breakdown-title {
+  color: var(--aga-yellow);
+}
+
+.breakdown-item:nth-child(3) .breakdown-title {
+  color: var(--aga-green);
+}
+
+/* Specific rules for pillars in about section */
+.about-section .breakdown-item:nth-child(3) .breakdown-title {
+  color: var(--aga-red);
+}
+
+.about-section .breakdown-item:nth-child(4) .breakdown-title {
+  color: var(--aga-yellow);
+}
+
+.about-section .breakdown-item:nth-child(5) .breakdown-title {
+  color: var(--aga-green);
+}
+
 .breakdown-text {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #666;
+  color: var(--dark-gray);
   margin-bottom: 2rem;
   font-weight: 400;
 }
@@ -1182,7 +1300,7 @@ body {
 }
 
 .faq-contact-link:hover {
-  color: var(--medium-brown);
+  color: var(--aga-yellow);
   text-decoration: underline;
 }
 
@@ -1246,12 +1364,12 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--text-color);
+  color: var(--aga-red);
   font-family: "arbotek", sans-serif;
 }
 
 .resource-card p {
-  color: #666;
+  color: var(--dark-gray);
   line-height: 1.6;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -1559,7 +1677,7 @@ body {
 
 .event-date {
   background: var(--medium-brown);
-  color: var(--black);
+  color: white;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -1599,14 +1717,14 @@ body {
 }
 
 .event-partner {
-  color: var(--medium-brown);
+  color: var(--aga-yellow);
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
 .event-description {
-  color: #666;
+  color: var(--dark-gray);
   line-height: 1.6;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
@@ -1630,7 +1748,7 @@ body {
 
 .event-time i,
 .event-venue i {
-  color: var(--medium-brown);
+  color: var(--aga-yellow);
   width: 16px;
 }
 

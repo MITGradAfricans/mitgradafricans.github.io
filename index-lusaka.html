@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIT African Graduate Association</title>
-    <link rel="icon" type="image/png" href="./images/Asset%205.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/Asset%205.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/Asset%205.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="./images/Asset%205.png">
-    <link rel="apple-touch-icon" href="./images/Asset%205.png">
+    <link rel="icon" type="image/png" href="./images/Asset%207.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Asset%207.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Asset%207.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./images/Asset%207.png">
+    <link rel="apple-touch-icon" href="./images/Asset%207.png">
     <link rel="stylesheet" href="styles-lusaka.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;900&display=swap"
@@ -36,24 +36,24 @@
       <nav class="hero-nav">
         <div class="nav-brand">
           <img
-            src="./images/aga logo white.png"
+            src="./images/Asset 1.png"
             alt="MIT AGA Logo"
             class="nav-logo"
           />
           <h1 class="brand-name">
             MIT<br />
             <span class="brand-accent">A</span>frican<br />
-            <span class="brand-accent">G</span>raduate<br />
-            <span class="brand-accent">A</span>ssociation
+            <span class="brand-accent-yellow">G</span>raduate<br />
+            <span class="brand-accent-green">A</span>ssociation
           </h1>
         </div>
         <div class="nav-links">
-          <a href="#home" class="nav-link active">Home</a>
-          <a href="about-lusaka.html" class="nav-link">About Us</a>
-          <a href="#blog" class="nav-link">Blog</a>
-          <a href="resources.html" class="nav-link">Resources</a>
-          <a href="events-lusaka.html" class="nav-link">Our Events</a>
-          <a href="faq-lusaka.html" class="nav-link">FAQ</a>
+          <a href="#home" class="nav-link nav-red">Home</a>
+          <a href="about-lusaka.html" class="nav-link nav-yellow">About Us</a>
+          <a href="#blog" class="nav-link nav-green">Our Blog</a>
+          <a href="resources.html" class="nav-link nav-red">Resources</a>
+          <a href="events-lusaka.html" class="nav-link nav-yellow">Our Events</a>
+          <a href="faq-lusaka.html" class="nav-link nav-green">FAQ</a>
         </div>
       </nav>
 
@@ -62,10 +62,10 @@
         <h2 class="hero-headline">
           Where
           <span class="highlight">African scholarship</span> meets<br /><span
-            class="highlight"
+            class="highlight-yellow"
             >innovation</span
           >
-          and <span class="highlight">global influence</span>.
+          and <span class="highlight-green">global influence</span>.
         </h2>
       </div>
     </section>
@@ -78,7 +78,9 @@
             Building African Excellence.<br>
             Creating lasting impact.
           </h2>
-          <a href="#about" class="btn btn-mission">Learn More</a>
+          <div style="margin-top: 2rem;">
+            <a href="#about" class="btn btn-learn-more">Learn More</a>
+          </div>
         </div>
         <div class="mission-right">
           <p class="mission-description">
@@ -98,64 +100,34 @@
       <div class="breakdown-section-header">
         <h2 class="breakdown-section-title">Our Pillars</h2>
       </div>
-      <!-- Aim Section -->
-      <div class="breakdown-item">
-        <div class="breakdown-image">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' fill='%23999'%3EAfrican Students Learning%3C/text%3E%3C/svg%3E"
-            alt="African Students Learning"
-          />
+      
+      <!-- Pillars Grid -->
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 4rem;">
+        <!-- Aim Pillar -->
+        <div style="background: linear-gradient(135deg, var(--aga-red), #e63946); padding: 3rem 2rem; border-radius: 20px; text-align: center; color: white; box-shadow: 0 20px 40px rgba(214, 40, 40, 0.3); transition: transform 0.3s ease;">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🎯</div>
+          <h3 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; font-family: 'arbotek', sans-serif;">Aim</h3>
+          <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.95;">Cultivating Purposeful Vision</p>
         </div>
-        <div class="breakdown-content">
-          <h2 class="breakdown-title">Aim</h2>
-          <p class="breakdown-text">
-            embodies the immense potential of African scholars at MIT and for
-            the continent. AGA's core purpose is building a strong, enriching
-            community that connects interdisciplinary African research talents
-            with innovative initiatives, driving developmental and social change
-            in Africa.
-          </p>
+
+        <!-- Act Pillar -->
+        <div style="background: linear-gradient(135deg, var(--aga-yellow), #f8c95d); padding: 3rem 2rem; border-radius: 20px; text-align: center; color: white; box-shadow: 0 20px 40px rgba(247, 179, 43, 0.3); transition: transform 0.3s ease;">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">⚡</div>
+          <h3 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; font-family: 'arbotek', sans-serif;">Act</h3>
+          <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.95;">Driving Academic and Professional Impact</p>
+        </div>
+
+        <!-- Africa Pillar -->
+        <div style="background: linear-gradient(135deg, var(--aga-green), #4a9e4a); padding: 3rem 2rem; border-radius: 20px; text-align: center; color: white; box-shadow: 0 20px 40px rgba(59, 134, 59, 0.3); transition: transform 0.3s ease;">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🌍</div>
+          <h3 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1rem; font-family: 'arbotek', sans-serif;">Africa</h3>
+          <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.95;">Connecting to the Continent</p>
         </div>
       </div>
-
-      <!-- Act Section -->
-      <div class="breakdown-item">
-        <div class="breakdown-content">
-          <h2 class="breakdown-title">Act</h2>
-          <p class="breakdown-text">
-            is a powerful call to turn vision into tangible results through a
-            unique STEM focus, while recognizing that our impact extends beyond
-            STEM disciplines. AGA is committed to impactful engagement from a
-            research, scientific, and engineering viewpoint, elevating African
-            perspectives globally through academic excellence and leadership.
-          </p>
-        </div>
-        <div class="breakdown-image">
-          <img
-            src="./images/AdobeStock_218066202.jpeg"
-            alt="African Student with Technology"
-          />
-        </div>
-      </div>
-
-      <!-- Africa Section -->
-      <div class="breakdown-item">
-        <div class="breakdown-image">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' fill='%23999'%3EAfrican Innovation%3C/text%3E%3C/svg%3E"
-            alt="African Innovation"
-          />
-        </div>
-        <div class="breakdown-content">
-          <h2 class="breakdown-title">Africa</h2>
-          <p class="breakdown-text">
-            is the heart of AGA's identity, celebrating the continent's vibrant
-            future. It underscores uniting African research at MIT and beyond to
-            foster collaboration for Africa's development and innovation,
-            leveraging its young population and abundant STEM talent at such a
-            pivotal global moment.
-          </p>
-        </div>
+      
+      <!-- Learn More Button -->
+      <div style="text-align: center; margin-top: 4rem;">
+        <a href="about-lusaka.html" class="btn btn-learn-more" style="font-size: 1.1rem; padding: 1.2rem 3rem;">Learn More</a>
       </div>
     </section>
 
@@ -212,17 +184,17 @@
             <div class="team-member">
               <div class="member-photo">
                 <img
-                  src="./images/AdobeStock_218066202.jpeg"
-                  alt="John Doe"
+                  src="./images/team/placeholder.jpg"
+                  alt="Abimbola"
                 />
               </div>
               <div class="member-info">
-                <h3>John Doe</h3>
-                <p class="member-role">President</p>
+                <h3>Abimbola</h3>
+                <p class="member-role">Co-President</p>
                 <p class="member-dept">Mechanical Engineering</p>
                 <p class="member-country">🇳🇬 Nigeria</p>
                 <div class="member-socials">
-                  <a href="mailto:john@mit.edu" class="social-icon"
+                  <a href="mailto:abimbola@mit.edu" class="social-icon"
                     ><i class="fas fa-envelope"></i
                   ></a>
                   <a
@@ -239,7 +211,47 @@
                 </div>
               </div>
               <div class="member-quick-links">
-                <a href="mailto:john@mit.edu" class="quick-link"
+                <a href="mailto:abimbola@mit.edu" class="quick-link"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true"
+                  class="quick-link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-photo">
+                <img
+                  src="./images/AdobeStock_218066202.jpeg"
+                  alt="Jonas"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Jonas</h3>
+                <p class="member-role">Co-President</p>
+                <p class="member-dept">Mechanical Engineering</p>
+                <p class="member-country">🇹🇬 Togo</p>
+                <div class="member-socials">
+                  <a href="mailto:jonas@mit.edu" class="social-icon"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true"
+                    class="social-icon"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="member-quick-links">
+                <a href="mailto:jonas@mit.edu" class="quick-link"
                   ><i class="fas fa-envelope"></i
                 ></a>
                 <a
@@ -253,16 +265,16 @@
               <div class="member-photo">
                 <img
                   src="./images/team/placeholder.jpg"
-                  alt="Jane Smith"
+                  alt="Naomi"
                 />
               </div>
               <div class="member-info">
-                <h3>Jane Smith</h3>
-                <p class="member-role">Vice President</p>
-                <p class="member-dept">Computer Science</p>
+                <h3>Naomi</h3>
+                <p class="member-role">Treasurer</p>
+                <p class="member-dept">Electrical Engineering & Computer Science</p>
                 <p class="member-country">🇰🇪 Kenya</p>
                 <div class="member-socials">
-                  <a href="mailto:jane@mit.edu" class="social-icon"
+                  <a href="mailto:naomi@mit.edu" class="social-icon"
                     ><i class="fas fa-envelope"></i
                   ></a>
                   <a
@@ -279,47 +291,7 @@
                 </div>
               </div>
               <div class="member-quick-links">
-                <a href="mailto:jane@mit.edu" class="quick-link"
-                  ><i class="fas fa-envelope"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true"
-                  class="quick-link"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </div>
-            </div>
-            <div class="team-member">
-              <div class="member-photo">
-                <img
-                  src="./images/team/placeholder.jpg"
-                  alt="Mike Johnson"
-                />
-              </div>
-              <div class="member-info">
-                <h3>Mike Johnson</h3>
-                <p class="member-role">Secretary</p>
-                <p class="member-dept">Electrical Engineering</p>
-                <p class="member-country">🇬🇭 Ghana</p>
-                <div class="member-socials">
-                  <a href="mailto:mike@mit.edu" class="social-icon"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                  <a
-                    href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true"
-                    class="social-icon"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                  <a href="#" class="social-icon"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a href="#" class="social-icon"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="member-quick-links">
-                <a href="mailto:mike@mit.edu" class="quick-link"
+                <a href="mailto:naomi@mit.edu" class="quick-link"
                   ><i class="fas fa-envelope"></i
                 ></a>
                 <a
@@ -335,16 +307,16 @@
               <div class="member-photo">
                 <img
                   src="./images/team/placeholder.jpg"
-                  alt="Sarah Wilson"
+                  alt="Aka"
                 />
               </div>
               <div class="member-info">
-                <h3>Sarah Wilson</h3>
-                <p class="member-role">Treasurer</p>
-                <p class="member-dept">Civil Engineering</p>
-                <p class="member-country">🇿🇦 South Africa</p>
+                <h3>Aka</h3>
+                <p class="member-role">Secretary</p>
+                <p class="member-dept">History, Anthropology, Science, Technology & Society</p>
+                <p class="member-country">🇳🇬 Nigeria</p>
                 <div class="member-socials">
-                  <a href="mailto:sarah@mit.edu" class="social-icon"
+                  <a href="mailto:aka@mit.edu" class="social-icon"
                     ><i class="fas fa-envelope"></i
                   ></a>
                   <a
@@ -361,7 +333,7 @@
                 </div>
               </div>
               <div class="member-quick-links">
-                <a href="mailto:sarah@mit.edu" class="quick-link"
+                <a href="mailto:aka@mit.edu" class="quick-link"
                   ><i class="fas fa-envelope"></i
                 ></a>
                 <a
@@ -375,16 +347,16 @@
               <div class="member-photo">
                 <img
                   src="./images/team/placeholder.jpg"
-                  alt="David Chen"
+                  alt="Gianna"
                 />
               </div>
               <div class="member-info">
-                <h3>David Chen</h3>
-                <p class="member-role">Events Coordinator</p>
-                <p class="member-dept">Chemical Engineering</p>
-                <p class="member-country">🇪🇹 Ethiopia</p>
+                <h3>Gianna</h3>
+                <p class="member-role">Webmaster</p>
+                <p class="member-dept">Electrical Engineering & Computer Science</p>
+                <p class="member-country">🇬🇭 Ghana</p>
                 <div class="member-socials">
-                  <a href="mailto:david@mit.edu" class="social-icon"
+                  <a href="mailto:gianna@mit.edu" class="social-icon"
                     ><i class="fas fa-envelope"></i
                   ></a>
                   <a
@@ -401,7 +373,7 @@
                 </div>
               </div>
               <div class="member-quick-links">
-                <a href="mailto:david@mit.edu" class="quick-link"
+                <a href="mailto:gianna@mit.edu" class="quick-link"
                   ><i class="fas fa-envelope"></i
                 ></a>
                 <a
@@ -446,11 +418,11 @@
         <div class="cta-content">
           <h2>Join Our Community</h2>
           <p>
-            Just click below connect with us and start your journey with MIT AGA.
+            Just click below and connect with us to start your journey with MIT AGA.
           </p>
           <div class="cta-buttons">
             <a href="#contact" class="btn btn-primary">Get Involved</a>
-            <a href="resources.html" class="btn btn-secondary">Learn More</a>
+            <a href="about-lusaka.html" class="btn btn-learn-more">Learn More</a>
           </div>
         </div>
       </section>
@@ -461,7 +433,7 @@
       <div class="footer-content">
         <div class="footer-section">
           <img
-            src="./images/aga logo white.png"
+            src="./images/Asset 1.png"
             alt="MIT AGA Logo"
             class="footer-aga-logo"
           />

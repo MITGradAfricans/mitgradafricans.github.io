@@ -1,4 +1,4 @@
-
+import Navbar from "../components/Navbar";
 import React, { useState } from "react";
 
 const faqData = [
@@ -11,7 +11,7 @@ const faqData = [
     question: "How can I get involved in AGA?",
     answer: (
       <>
-        Easy. Fill out {" "}
+        Easy. Fill out{" "}
         <a
           href="https://forms.gle/agNbPNpu5UrkWhmw9"
           target="_blank"
@@ -19,7 +19,8 @@ const faqData = [
         >
           this form
         </a>
-        , follow us on our socials and check our website for upcoming events and opportunities to participate!
+        , follow us on our socials and check our website for upcoming events and
+        opportunities to participate!
       </>
     ),
   },
@@ -37,7 +38,7 @@ const faqData = [
     question: "How to make donations?",
     answer: (
       <>
-        You can make donations {" "}
+        You can make donations{" "}
         <a href="#" target="_blank" rel="noopener">
           here
         </a>
@@ -52,9 +53,7 @@ function Faq() {
 
   const toggleFaq = (idx: number) => {
     setOpenIndexes((prev) =>
-      prev.includes(idx)
-        ? prev.filter((i) => i !== idx)
-        : [...prev, idx]
+      prev.includes(idx) ? prev.filter((i) => i !== idx) : [...prev, idx],
     );
   };
 
@@ -63,25 +62,7 @@ function Faq() {
       {/* Hero Section with Navigation */}
       <section className="hero-section faq-hero">
         {/* Navigation (inline, not using Navbar component) */}
-        <nav className="hero-nav">
-          <div className="nav-brand">
-            <img src="./images/Asset 1.png" alt="MIT AGA Logo" className="nav-logo" />
-            <h1 className="brand-name">
-              MIT<br />
-              <span className="brand-accent">A</span>frican<br />
-              <span className="brand-accent-yellow">G</span>raduate<br />
-              <span className="brand-accent-green">A</span>ssociation
-            </h1>
-          </div>
-          <div className="nav-links">
-            <a href="index.html#home" className="nav-link">Home</a>
-            <a href="about.html" className="nav-link">About Us</a>
-            <a href="#blog" className="nav-link">Our Blog</a>
-            <a href="resources.html" className="nav-link">Resources</a>
-            <a href="events.html" className="nav-link">Our Events</a>
-            <a href="faq.html" className="nav-link active">FAQ</a>
-          </div>
-        </nav>
+        <Navbar />
 
         {/* Hero Content */}
         <div className="hero-content">
@@ -108,7 +89,9 @@ function Faq() {
                 </button>
                 <div
                   className="faq-answer"
-                  style={{ display: openIndexes.includes(idx) ? "block" : "none" }}
+                  style={{
+                    display: openIndexes.includes(idx) ? "block" : "none",
+                  }}
                 >
                   {item.answer}
                 </div>
@@ -117,8 +100,8 @@ function Faq() {
           </div>
           <div className="faq-contact">
             <p>
-              If your question is not on the list, feel free to fill out this form
-              to send us your specific question:
+              If your question is not on the list, feel free to fill out this
+              form to send us your specific question:
               <a
                 href="https://forms.gle/agNbPNpu5UrkWhmw9"
                 target="_blank"
@@ -167,8 +150,12 @@ function Faq() {
             AGA.
           </p>
           <div className="cta-buttons">
-            <a href="#contact" className="btn btn-primary">Get Involved</a>
-            <a href="about.html" className="btn btn-learn-more">Learn More</a>
+            <a href="#contact" className="btn btn-primary">
+              Get Involved
+            </a>
+            <a href="about.html" className="btn btn-learn-more">
+              Learn More
+            </a>
           </div>
         </div>
       </section>
@@ -187,14 +174,18 @@ function Faq() {
               Where African scholarship meets innovation and global influence.
             </p>
             <div className="social-links">
-              <a href="#"><i className="fab fa-facebook"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-              <a
-                href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true"
-              >
+              <a href="#">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
           <div className="footer-section">
@@ -205,7 +196,9 @@ function Faq() {
             />
             <h3>Massachusetts Institute of Technology</h3>
             <p>77 Massachusetts Avenue, Cambridge, MA, USA</p>
-            <a href="#" className="footer-accessibility">Accessibility</a>
+            <a href="#" className="footer-accessibility">
+              Accessibility
+            </a>
           </div>
         </div>
         <div className="footer-bottom">

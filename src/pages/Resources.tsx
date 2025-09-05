@@ -1,29 +1,11 @@
-
+import Navbar from "../components/Navbar";
 function Resources() {
   return (
     <div>
       {/* Hero Section with Navigation */}
       <section className="hero-section faq-hero">
         {/* Navigation (inline, not using Navbar component) */}
-        <nav className="hero-nav">
-          <div className="nav-brand">
-            <img src="./images/Asset 1.png" alt="MIT AGA Logo" className="nav-logo" />
-            <h1 className="brand-name">
-              MIT<br />
-              <span className="brand-accent">A</span>frican<br />
-              <span className="brand-accent-yellow">G</span>raduate<br />
-              <span className="brand-accent-green">A</span>ssociation
-            </h1>
-          </div>
-          <div className="nav-links">
-            <a href="index.html#home" className="nav-link">Home</a>
-            <a href="about.html" className="nav-link">About Us</a>
-            <a href="#blog" className="nav-link">Our Blog</a>
-            <a href="resources.html" className="nav-link active">Resources</a>
-            <a href="events.html" className="nav-link">Our Events</a>
-            <a href="faq.html" className="nav-link">FAQ</a>
-          </div>
-        </nav>
+        <Navbar />
 
         {/* Hero Content */}
         <div className="hero-content">
@@ -44,7 +26,9 @@ function Resources() {
                 Access study materials, research papers, and academic support
                 resources tailored for African graduate students.
               </p>
-              <a href="about.html" className="btn btn-learn-more">Learn More</a>
+              <a href="about.html" className="btn btn-learn-more">
+                Learn More
+              </a>
             </div>
             <div className="resource-card">
               <div className="resource-icon">
@@ -52,10 +36,12 @@ function Resources() {
               </div>
               <h3>Career Development</h3>
               <p>
-                Explore career opportunities, networking events, and professional
-                development resources for African professionals.
+                Explore career opportunities, networking events, and
+                professional development resources for African professionals.
               </p>
-              <a href="about.html" className="btn btn-learn-more">Learn More</a>
+              <a href="about.html" className="btn btn-learn-more">
+                Learn More
+              </a>
             </div>
             <div className="resource-card">
               <div className="resource-icon">
@@ -66,7 +52,9 @@ function Resources() {
                 Connect with fellow African students, alumni, and community
                 members for mentorship and support.
               </p>
-              <a href="about.html" className="btn btn-learn-more">Learn More</a>
+              <a href="about.html" className="btn btn-learn-more">
+                Learn More
+              </a>
             </div>
             <div className="resource-card">
               <div className="resource-icon">
@@ -77,7 +65,9 @@ function Resources() {
                 Discover opportunities to contribute to African development
                 projects and initiatives.
               </p>
-              <a href="about.html" className="btn btn-learn-more">Learn More</a>
+              <a href="about.html" className="btn btn-learn-more">
+                Learn More
+              </a>
             </div>
             <div className="resource-card">
               <div className="resource-icon">
@@ -88,7 +78,9 @@ function Resources() {
                 Stay updated on upcoming events, workshops, and cultural
                 activities organized by AGA.
               </p>
-              <a href="about.html" className="btn btn-learn-more">Learn More</a>
+              <a href="about.html" className="btn btn-learn-more">
+                Learn More
+              </a>
             </div>
           </div>
         </div>
@@ -129,8 +121,12 @@ function Resources() {
             AGA.
           </p>
           <div className="cta-buttons">
-            <a href="#contact" className="btn btn-primary">Get Involved</a>
-            <a href="about.html" className="btn btn-learn-more">Learn More</a>
+            <a href="#contact" className="btn btn-primary">
+              Get Involved
+            </a>
+            <a href="about.html" className="btn btn-learn-more">
+              Learn More
+            </a>
           </div>
         </div>
       </section>
@@ -149,14 +145,18 @@ function Resources() {
               Where African scholarship meets innovation and global influence.
             </p>
             <div className="social-links">
-              <a href="#"><i className="fab fa-facebook"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-              <a
-                href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true"
-              >
+              <a href="#">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
           <div className="footer-section">
@@ -167,7 +167,9 @@ function Resources() {
             />
             <h3>Massachusetts Institute of Technology</h3>
             <p>77 Massachusetts Avenue, Cambridge, MA, USA</p>
-            <a href="#" className="footer-accessibility">Accessibility</a>
+            <a href="#" className="footer-accessibility">
+              Accessibility
+            </a>
           </div>
         </div>
         <div className="footer-bottom">

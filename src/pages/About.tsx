@@ -368,7 +368,7 @@ function About() {
       </section>
 
       {/* CTA Section */}
-  <CtaSection />
+      <CtaSection />
 
       {/* Footer */}
       <Footer />

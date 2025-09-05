@@ -118,7 +118,7 @@ function Faq() {
       </section>
 
       {/* CTA Section */}
-  <CtaSection />
+      <CtaSection />
 
       {/* Footer */}
       <Footer />

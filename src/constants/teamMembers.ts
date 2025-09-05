@@ -11,7 +11,7 @@ export const teamMembers: TeamMemberProps[] = [
     linkedin:
       "https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true",
     twitter: "#",
-    instagram: "#"
+    instagram: "#",
   },
   {
     name: "Jonas",
@@ -23,7 +23,7 @@ export const teamMembers: TeamMemberProps[] = [
     linkedin:
       "https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true",
     twitter: "#",
-    instagram: "#"
+    instagram: "#",
   },
   {
     name: "Naomi",
@@ -35,7 +35,7 @@ export const teamMembers: TeamMemberProps[] = [
     linkedin:
       "https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true",
     twitter: "#",
-    instagram: "#"
+    instagram: "#",
   },
   {
     name: "Aka",
@@ -47,7 +47,7 @@ export const teamMembers: TeamMemberProps[] = [
     linkedin:
       "https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true",
     twitter: "#",
-    instagram: "#"
+    instagram: "#",
   },
   {
     name: "Gianna",
@@ -59,6 +59,6 @@ export const teamMembers: TeamMemberProps[] = [
     linkedin:
       "https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true",
     twitter: "#",
-    instagram: "#"
-  }
+    instagram: "#",
+  },
 ];

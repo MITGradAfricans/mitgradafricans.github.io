@@ -89,7 +89,7 @@ function Resources() {
       </section>
 
       {/* CTA Section */}
-  <CtaSection />
+      <CtaSection />
 
       {/* Footer */}
       <Footer />

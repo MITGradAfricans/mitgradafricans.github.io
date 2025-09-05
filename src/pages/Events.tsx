@@ -195,7 +195,7 @@ function Events() {
       </section>
 
       {/* CTA Section */}
-  <CtaSection />
+      <CtaSection />
 
       {/* Footer */}
       <Footer />

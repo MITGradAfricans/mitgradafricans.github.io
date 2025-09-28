@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="hero-nav">
       <div className="nav-brand">
         <img
-          src="./images/Asset 1.png"
+          src="./public/images/Asset 1.png"
           alt="MIT AGA Logo"
           className="nav-logo"
         />

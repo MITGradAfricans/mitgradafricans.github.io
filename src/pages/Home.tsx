@@ -12,7 +12,7 @@ function Home() {
       <section className="hero-section">
         <div className="hero-background">
           <img
-            src="./images/Massachusetts-Institute-of-Technology-Great-Dome-Building-10-and-Barker-Library__4-060693_00_DOME_N189_lrg-2560x1777.7777777778-c-default.webp"
+            src="./public/images/Massachusetts-Institute-of-Technology-Great-Dome-Building-10-and-Barker-Library__4-060693_00_DOME_N189_lrg-2560x1777.7777777778-c-default.webp"
             alt="Massachusetts Institute of Technology Great Dome"
             className="hero-image"
           />
@@ -76,7 +76,7 @@ function Home() {
             </div>
             <div className="image-block">
               <img
-                src="./images/about-image.jpg"
+                src="./public/images/about-image.jpg"
                 alt="MIT AGA Community"
                 className="section-image"
               />

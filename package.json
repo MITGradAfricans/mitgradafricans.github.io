@@ -1,4 +1,8 @@
 {
+  "name": "aga-website",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://jonassog.github.io/aga-website",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -12,13 +16,17 @@
     "eslint": "^9.35.0",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2",
-    "vite": "^7.1.4"
+    "vite": "^7.1.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.1.1"
   },
   "scripts": {
     "dev": "vite",
     "typecheck": "tsc --noEmit",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   }
 }

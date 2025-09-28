@@ -42,7 +42,7 @@ function About() {
               </div>
               <div className="image-block">
                 <img
-                  src="./images/about-image.jpg"
+                  src="./public/images/about-image.jpg"
                   alt="MIT AGA Community"
                   className="section-image"
                 />
@@ -89,7 +89,7 @@ function About() {
             <div className="breakdown-item">
               <div className="breakdown-image">
                 <img
-                  src="./images/aim-pillar.jpg"
+                  src="./public/images/aim-pillar.jpg"
                   alt="AIM - Cultivating Purposeful Vision"
                 />
               </div>
@@ -111,7 +111,7 @@ function About() {
             <div className="breakdown-item reverse">
               <div className="breakdown-image">
                 <img
-                  src="./images/act-pillar.jpg"
+                  src="./public/images/act-pillar.jpg"
                   alt="ACT - Driving Academic and Professional Impact"
                 />
               </div>
@@ -132,7 +132,7 @@ function About() {
             <div className="breakdown-item">
               <div className="breakdown-image">
                 <img
-                  src="./images/africa-pillar.jpg"
+                  src="./public/images/africa-pillar.jpg"
                   alt="AFRICA - Connecting to the Continent"
                 />
               </div>
@@ -160,7 +160,7 @@ function About() {
               <div className="team-grid">
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./images/team/placeholder.jpg" alt="Abimbola" />
+                    <img src="./public/images/team/placeholder.jpg" alt="Abimbola" />
                   </div>
                   <div className="member-info">
                     <h3>Abimbola</h3>
@@ -199,7 +199,7 @@ function About() {
                 </div>
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./images/AdobeStock_218066202.jpeg" alt="Jonas" />
+                    <img src="./public/images/AdobeStock_218066202.jpeg" alt="Jonas" />
                   </div>
                   <div className="member-info">
                     <h3>Jonas</h3>
@@ -238,7 +238,7 @@ function About() {
                 </div>
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./images/team/placeholder.jpg" alt="Naomi" />
+                    <img src="./public/images/team/placeholder.jpg" alt="Naomi" />
                   </div>
                   <div className="member-info">
                     <h3>Naomi</h3>
@@ -281,7 +281,7 @@ function About() {
               <div className="team-grid-single">
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./images/team/placeholder.jpg" alt="Aka" />
+                    <img src="./public/images/team/placeholder.jpg" alt="Aka" />
                   </div>
                   <div className="member-info">
                     <h3>Aka</h3>
@@ -322,7 +322,7 @@ function About() {
                 </div>
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./images/team/placeholder.jpg" alt="Gianna" />
+                    <img src="./public/images/team/placeholder.jpg" alt="Gianna" />
                   </div>
                   <div className="member-info">
                     <h3>Gianna</h3>

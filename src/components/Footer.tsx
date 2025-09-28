@@ -6,7 +6,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <img
-            src="./images/Asset 1.png"
+            src="./public/images/Asset 1.png"
             alt="MIT AGA Logo"
             className="footer-aga-logo"
           />
@@ -31,7 +31,7 @@ function Footer() {
         </div>
         <div className="footer-section">
           <img
-            src="./images/mit_logo_std_rgb_white.png"
+            src="./public/images/mit_logo_std_rgb_white.png"
             alt="MIT Logo"
             className="footer-mit-logo"
           />

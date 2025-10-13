@@ -32,7 +32,8 @@ jobs:
           git config user.name "MITGradAfricans"
           git config user.email "aga-exec@mit.edu"
 
+      - name: Set up authenticated remote
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
       - name: Deploy to GitHub Pages
         run: npx gh-pages -d dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

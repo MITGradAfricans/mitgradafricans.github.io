@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CtaSection() {
   return (
@@ -36,12 +37,12 @@ function CtaSection() {
           AGA.
         </p>
         <div className="cta-buttons">
-          <a href="#contact" className="btn btn-primary">
+          <Link to="/faq" className="btn btn-primary">
             Get Involved
-          </a>
-          <a href="about.html" className="btn btn-learn-more">
+          </Link>
+          <Link to="/about" className="btn btn-learn-more">
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
     </section>

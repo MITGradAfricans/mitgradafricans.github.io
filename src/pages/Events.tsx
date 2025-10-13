@@ -86,7 +86,12 @@ function Events() {
 
             {/* View Gallery Button */}
             <div className="gallery-button-container">
-              <a href="#" className="btn btn-primary btn-gallery">
+              <a
+                href="https://www.instagram.com/mitaga"
+                className="btn btn-primary btn-gallery"
+                target="_blank"
+                rel="noreferrer"
+              >
                 View Our Gallery
               </a>
             </div>

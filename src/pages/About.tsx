@@ -42,7 +42,6 @@ function About() {
 
   return (
     <div>
-      {/* Hero Section with Navigation */}
       <HeroSection
         backgroundImage={heroImage}
         backgroundAlt="Massachusetts Institute of Technology Great Dome"
@@ -51,7 +50,6 @@ function About() {
         <h2 className="hero-headline">About Us</h2>
       </HeroSection>
 
-      {/* About Content */}
       <section className="about-content">
         <div className="about-container">
           {/* Mission Section */}
@@ -85,7 +83,6 @@ function About() {
             </div>
           </div>
 
-          {/* Our Pillars Section */}
           <div className="about-section">
             <div className="breakdown-section-header">
               <h2 className="breakdown-section-title">Our Pillars</h2>
@@ -120,7 +117,6 @@ function About() {
             ))}
           </div>
 
-          {/* Our Team Section */}
           <div className="about-section">
             <div className="breakdown-section-header">
               <h2 className="breakdown-section-title">Our Team</h2>

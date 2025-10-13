@@ -5,6 +5,7 @@ import PillarSection from "../components/PillarSection";
 import StatsSection from "../components/StatsSection";
 import TeamMembers from "../components/TeamMembers";
 import React from "react";
+import { Link } from "react-router-dom";
 import heroImage from "../assets/images/hero-dome.webp";
 import aboutCommunityImage from "../assets/images/about-community.jpg";
 
@@ -33,9 +34,9 @@ function Home() {
               Creating lasting impact.
             </h2>
             <div style={{ marginTop: "2rem" }}>
-              <a href="#about" className="btn btn-learn-more">
+              <Link to="/about" className="btn btn-learn-more">
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mission-right">

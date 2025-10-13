@@ -13,16 +13,32 @@ function Footer() {
             Where African scholarship meets innovation and global influence.
           </p>
           <div className="social-links">
-            <a href="#">
+            <a
+              href="https://www.facebook.com/mitaga"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-facebook"></i>
             </a>
-            <a href="#">
+            <a
+              href="https://twitter.com/mitaga"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true">
+            <a
+              href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/mitaga"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-instagram"></i>
             </a>
           </div>
@@ -31,7 +47,12 @@ function Footer() {
           <img src={mitLogo} alt="MIT Logo" className="footer-mit-logo" />
           <h3>Massachusetts Institute of Technology</h3>
           <p>77 Massachusetts Avenue, Cambridge, MA, USA</p>
-          <a href="#" className="footer-accessibility">
+          <a
+            href="https://accessibility.mit.edu/"
+            className="footer-accessibility"
+            target="_blank"
+            rel="noreferrer"
+          >
             Accessibility
           </a>
         </div>

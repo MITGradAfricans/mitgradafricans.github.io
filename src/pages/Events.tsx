@@ -1,7 +1,42 @@
+import React from "react";
 import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import heroImage from "../assets/images/hero-dome.webp";
+import EventCard, { UpcomingEvent } from "../components/EventCard";
+
+const upcomingEvents: UpcomingEvent[] = [
+  {
+    day: "15",
+    month: "Jan",
+    title: "African Innovation Workshop",
+    partner: "Partner: MIT Innovation Initiative",
+    description:
+      "Join us for an interactive workshop exploring African innovation ecosystems and opportunities for collaboration.",
+    time: "2:00 PM - 4:00 PM",
+    venue: "Building 10, Room 105",
+  },
+  {
+    day: "18",
+    month: "Jan",
+    title: "Networking Mixer",
+    partner: "Partner: MIT African Students Association",
+    description:
+      "Connect with fellow African students, alumni, and professionals in a relaxed networking environment.",
+    time: "6:00 PM - 8:00 PM",
+    venue: "Student Center, Room 407",
+  },
+  {
+    day: "22",
+    month: "Jan",
+    title: "Career Development Seminar",
+    partner: "Partner: MIT Career Services",
+    description:
+      "Learn about career opportunities in Africa and strategies for professional development in STEM fields.",
+    time: "3:00 PM - 5:00 PM",
+    venue: "Building 3, Room 270",
+  },
+];
 
 function Events() {
   return (
@@ -14,10 +49,8 @@ function Events() {
         <h2 className="hero-headline">Our Events</h2>
       </HeroSection>
 
-      {/* Events Content */}
       <section className="about-content">
         <div className="about-container">
-          {/* Events Section */}
           <div className="about-section">
             <div className="text-block">
               <p>
@@ -27,148 +60,18 @@ function Events() {
               </p>
             </div>
 
-            {/* Upcoming Events Section */}
             <div className="upcoming-events-section">
               <h2 className="section-title">Upcoming Events</h2>
               <div className="upcoming-events-grid">
-                {/* Event Card 1 */}
-                <div className="event-card">
-                  <div className="event-date">
-                    <span className="event-day">15</span>
-                    <span className="event-month">Jan</span>
-                  </div>
-                  <div className="event-details">
-                    <h3
-                      className="event-title"
-                      style={{ color: "var(--aga-red)" }}
-                    >
-                      African Innovation Workshop
-                    </h3>
-                    <p className="event-partner">
-                      Partner: MIT Innovation Initiative
-                    </p>
-                    <p className="event-description">
-                      Join us for an interactive workshop exploring African
-                      innovation ecosystems and opportunities for collaboration.
-                    </p>
-                    <div className="event-meta">
-                      <span
-                        className="event-time"
-                        style={{ color: "var(--aga-green)" }}
-                      >
-                        <i
-                          className="fas fa-clock"
-                          style={{ color: "var(--aga-green)" }}
-                        ></i>
-                        2:00 PM - 4:00 PM
-                      </span>
-                      <span
-                        className="event-venue"
-                        style={{ color: "var(--aga-green)" }}
-                      >
-                        <i
-                          className="fas fa-map-marker-alt"
-                          style={{ color: "var(--aga-green)" }}
-                        ></i>
-                        Building 10, Room 105
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Event Card 2 */}
-                <div className="event-card">
-                  <div className="event-date">
-                    <span className="event-day">18</span>
-                    <span className="event-month">Jan</span>
-                  </div>
-                  <div className="event-details">
-                    <h3
-                      className="event-title"
-                      style={{ color: "var(--aga-red)" }}
-                    >
-                      Networking Mixer
-                    </h3>
-                    <p className="event-partner">
-                      Partner: MIT African Students Association
-                    </p>
-                    <p className="event-description">
-                      Connect with fellow African students, alumni, and
-                      professionals in a relaxed networking environment.
-                    </p>
-                    <div className="event-meta">
-                      <span
-                        className="event-time"
-                        style={{ color: "var(--aga-green)" }}
-                      >
-                        <i
-                          className="fas fa-clock"
-                          style={{ color: "var(--aga-green)" }}
-                        ></i>
-                        6:00 PM - 8:00 PM
-                      </span>
-                      <span
-                        className="event-venue"
-                        style={{ color: "var(--aga-green)" }}
-                      >
-                        <i
-                          className="fas fa-map-marker-alt"
-                          style={{ color: "var(--aga-green)" }}
-                        ></i>
-                        Student Center, Room 407
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Event Card 3 */}
-                <div className="event-card">
-                  <div className="event-date">
-                    <span className="event-day">22</span>
-                    <span className="event-month">Jan</span>
-                  </div>
-                  <div className="event-details">
-                    <h3
-                      className="event-title"
-                      style={{ color: "var(--aga-red)" }}
-                    >
-                      Career Development Seminar
-                    </h3>
-                    <p className="event-partner">
-                      Partner: MIT Career Services
-                    </p>
-                    <p className="event-description">
-                      Learn about career opportunities in Africa and strategies
-                      for professional development in STEM fields.
-                    </p>
-                    <div className="event-meta">
-                      <span
-                        className="event-time"
-                        style={{ color: "var(--aga-green)" }}
-                      >
-                        <i
-                          className="fas fa-clock"
-                          style={{ color: "var(--aga-green)" }}
-                        ></i>
-                        3:00 PM - 5:00 PM
-                      </span>
-                      <span
-                        className="event-venue"
-                        style={{ color: "var(--aga-green)" }}
-                      >
-                        <i
-                          className="fas fa-map-marker-alt"
-                          style={{ color: "var(--aga-green)" }}
-                        ></i>
-                        Building 3, Room 270
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                {upcomingEvents.map((event) => (
+                  <EventCard
+                    key={`${event.month}-${event.day}-${event.title}`}
+                    event={event}
+                  />
+                ))}
               </div>
             </div>
 
-            {/* Google Calendar Embed */}
             <div className="calendar-container">
               <div className="calendar-wrapper">
                 <iframe
@@ -176,8 +79,6 @@ function Events() {
                   style={{ border: 0 }}
                   width="100%"
                   height="700"
-                  frameBorder="0"
-                  scrolling="no"
                   title="MIT AGA Events Calendar"
                 ></iframe>
               </div>

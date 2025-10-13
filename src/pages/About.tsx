@@ -372,11 +372,7 @@ function About() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
       <CtaSection />
-
-      {/* Footer */}
       <Footer />
     </div>
   );

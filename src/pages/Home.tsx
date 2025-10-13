@@ -82,8 +82,6 @@ function Home() {
       </main>
 
       <Footer />
-
-      <script src="script.js"></script>
     </div>
   );
 }

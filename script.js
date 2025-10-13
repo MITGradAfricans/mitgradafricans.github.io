@@ -29,7 +29,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-  })
+  }),
 );
 
 // Smooth scrolling for navigation links
@@ -103,7 +103,7 @@ const observer = new IntersectionObserver((entries) => {
 // Add fade-in class to elements and observe them
 document.addEventListener("DOMContentLoaded", () => {
   const fadeElements = document.querySelectorAll(
-    ".team-member, .benefit-card, .stat-item"
+    ".team-member, .benefit-card, .stat-item",
   );
   fadeElements.forEach((el) => {
     el.classList.add("fade-in");
@@ -143,7 +143,7 @@ const statsObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0.5 },
 );
 
 // Observe stats section
@@ -189,7 +189,7 @@ function validateEmail(email) {
 document.addEventListener("DOMContentLoaded", () => {
   // Add click to copy email functionality
   const emailElement = document.querySelector(
-    ".footer-section p:first-of-type"
+    ".footer-section p:first-of-type",
   );
   if (emailElement) {
     emailElement.style.cursor = "pointer";
@@ -361,7 +361,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const imageHeight = heroImage.offsetHeight;
       const visibleHeight = Math.max(
         0,
-        Math.min(imageHeight, imageRect.bottom)
+        Math.min(imageHeight, imageRect.bottom),
       );
       const visibilityPercentage = (visibleHeight / imageHeight) * 100;
 

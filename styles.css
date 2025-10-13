@@ -1638,6 +1638,15 @@ body {
 }
 
 /* FAQ Hero Section */
+.about-hero .hero-content {
+  align-items: center;
+  padding: 4rem;
+}
+
+.about-hero .hero-headline {
+  text-align: center;
+}
+
 .faq-hero {
   background: var(--dark-gray);
   height: auto;

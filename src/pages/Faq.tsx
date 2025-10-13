@@ -1,6 +1,6 @@
 import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
 import React, { useState } from "react";
 
 const faqData = [
@@ -62,15 +62,10 @@ function Faq() {
   return (
     <div>
       {/* Hero Section with Navigation */}
-      <section className="hero-section faq-hero">
-        {/* Navigation (inline, not using Navbar component) */}
-        <Navbar />
-
-        {/* Hero Content */}
-        <div className="hero-content">
-          <h2 className="hero-headline">Frequently Asked Questions</h2>
-        </div>
-      </section>
+      <HeroSection backgroundImage="./public/images/Massachusetts-Institute-of-Technology-Great-Dome-Building-10-and-Barker-Library__4-060693_00_DOME_N189_lrg-2560x1777.7777777778-c-default.webp"
+        backgroundAlt="Massachusetts Institute of Technology Great Dome">
+        <h2 className="hero-headline">Frequently Asked Questions</h2>
+      </HeroSection>
 
       {/* FAQ Content */}
       <section className="faq-content">
@@ -116,11 +111,7 @@ function Faq() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
       <CtaSection />
-
-      {/* Footer */}
       <Footer />
     </div>
   );

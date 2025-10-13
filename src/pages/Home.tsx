@@ -1,36 +1,26 @@
 import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import TeamMembers from "../components/TeamMembers";
-import StatsSection from "../components/StatsSection";
+import HeroSection from "../components/HeroSection";
 import PillarSection from "../components/PillarSection";
+import StatsSection from "../components/StatsSection";
+import TeamMembers from "../components/TeamMembers";
 import React from "react";
 
 function Home() {
   return (
     <div>
-      <section className="hero-section">
-        <div className="hero-background">
-          <img
-            src="./public/images/Massachusetts-Institute-of-Technology-Great-Dome-Building-10-and-Barker-Library__4-060693_00_DOME_N189_lrg-2560x1777.7777777778-c-default.webp"
-            alt="Massachusetts Institute of Technology Great Dome"
-            className="hero-image"
-          />
-          <div className="hero-overlay"></div>
-        </div>
-
-        <Navbar />
-
-        <div className="hero-content">
-          <h2 className="hero-headline">
-            Where
-            <span className="highlight">African scholarship</span> meets
-            <br />
-            <span className="highlight-yellow">innovation</span>
-            and <span className="highlight-green">global influence</span>.
-          </h2>
-        </div>
-      </section>
+      <HeroSection
+        backgroundImage="./public/images/Massachusetts-Institute-of-Technology-Great-Dome-Building-10-and-Barker-Library__4-060693_00_DOME_N189_lrg-2560x1777.7777777778-c-default.webp"
+        backgroundAlt="Massachusetts Institute of Technology Great Dome"
+      >
+        <h2 className="hero-headline">
+          Where
+          <span className="highlight">African scholarship</span> meets
+          <br />
+          <span className="highlight-yellow">innovation</span>
+          and <span className="highlight-green">global influence</span>.
+        </h2>
+      </HeroSection>
 
       <section className="mission-section">
         <div className="mission-content">

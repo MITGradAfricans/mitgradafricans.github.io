@@ -1,20 +1,19 @@
 import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
 import React from "react";
 
 function About() {
   return (
     <div>
       {/* Hero Section with Navigation */}
-      <section className="hero-section faq-hero">
-        {/* Navigation */}
-        <Navbar />
-        {/* Hero Content */}
-        <div className="hero-content">
-          <h2 className="hero-headline">About Us</h2>
-        </div>
-      </section>
+      <HeroSection
+        backgroundImage="./public/images/Massachusetts-Institute-of-Technology-Great-Dome-Building-10-and-Barker-Library__4-060693_00_DOME_N189_lrg-2560x1777.7777777778-c-default.webp"
+        backgroundAlt="Massachusetts Institute of Technology Great Dome"
+        sectionClassName="about-hero"
+      >
+        <h2 className="hero-headline">About Us</h2>
+      </HeroSection>
 
       {/* About Content */}
       <section className="about-content">

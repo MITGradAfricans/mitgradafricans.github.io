@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import agaLogo from "../assets/images/aga-logo.png";
 
 function Navbar() {
   return (
     <nav className="hero-nav">
       <div className="nav-brand">
-        <img
-          src="./public/images/Asset 1.png"
-          alt="MIT AGA Logo"
-          className="nav-logo"
-        />
+        <img src={agaLogo} alt="MIT AGA Logo" className="nav-logo" />
         <h1 className="brand-name">
           MIT
           <br />

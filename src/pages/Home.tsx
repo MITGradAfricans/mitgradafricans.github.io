@@ -5,12 +5,14 @@ import PillarSection from "../components/PillarSection";
 import StatsSection from "../components/StatsSection";
 import TeamMembers from "../components/TeamMembers";
 import React from "react";
+import heroImage from "../assets/images/hero-dome.webp";
+import aboutCommunityImage from "../assets/images/about-community.jpg";
 
 function Home() {
   return (
     <div>
       <HeroSection
-        backgroundImage="./public/images/Massachusetts-Institute-of-Technology-Great-Dome-Building-10-and-Barker-Library__4-060693_00_DOME_N189_lrg-2560x1777.7777777778-c-default.webp"
+        backgroundImage={heroImage}
         backgroundAlt="Massachusetts Institute of Technology Great Dome"
       >
         <h2 className="hero-headline">
@@ -48,8 +50,7 @@ function Home() {
           </div>
         </div>
       </section>
-
-  <PillarSection />
+      <PillarSection />
 
       <main className="main-content">
         <section id="about" className="content-section">
@@ -66,7 +67,7 @@ function Home() {
             </div>
             <div className="image-block">
               <img
-                src="./public/images/about-image.jpg"
+                src={aboutCommunityImage}
                 alt="MIT AGA Community"
                 className="section-image"
               />

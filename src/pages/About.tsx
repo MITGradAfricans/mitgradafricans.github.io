@@ -2,13 +2,20 @@ import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import React from "react";
+import heroImage from "../assets/images/hero-dome.webp";
+import aboutCommunityImage from "../assets/images/about-community.jpg";
+import pillarAimImage from "../assets/images/pillar-aim.jpeg";
+import pillarActImage from "../assets/images/pillar-act.jpeg";
+import pillarAfricaImage from "../assets/images/pillar-africa.jpeg";
+import placeholderImage from "../assets/images/team/placeholder.png";
+import jonasImage from "../assets/images/team/jonas.jpeg";
 
 function About() {
   return (
     <div>
       {/* Hero Section with Navigation */}
       <HeroSection
-        backgroundImage="./public/images/Massachusetts-Institute-of-Technology-Great-Dome-Building-10-and-Barker-Library__4-060693_00_DOME_N189_lrg-2560x1777.7777777778-c-default.webp"
+        backgroundImage={heroImage}
         backgroundAlt="Massachusetts Institute of Technology Great Dome"
         sectionClassName="about-hero"
       >
@@ -41,7 +48,7 @@ function About() {
               </div>
               <div className="image-block">
                 <img
-                  src="./public/images/about-image.jpg"
+                  src={aboutCommunityImage}
                   alt="MIT AGA Community"
                   className="section-image"
                 />
@@ -88,7 +95,7 @@ function About() {
             <div className="breakdown-item">
               <div className="breakdown-image">
                 <img
-                  src="./public/images/aim-pillar.jpg"
+                  src={pillarAimImage}
                   alt="AIM - Cultivating Purposeful Vision"
                 />
               </div>
@@ -110,7 +117,7 @@ function About() {
             <div className="breakdown-item reverse">
               <div className="breakdown-image">
                 <img
-                  src="./public/images/act-pillar.jpg"
+                  src={pillarActImage}
                   alt="ACT - Driving Academic and Professional Impact"
                 />
               </div>
@@ -131,7 +138,7 @@ function About() {
             <div className="breakdown-item">
               <div className="breakdown-image">
                 <img
-                  src="./public/images/africa-pillar.jpg"
+                  src={pillarAfricaImage}
                   alt="AFRICA - Connecting to the Continent"
                 />
               </div>
@@ -159,7 +166,7 @@ function About() {
               <div className="team-grid">
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./public/images/team/placeholder.jpg" alt="Abimbola" />
+                    <img src={placeholderImage} alt="Abimbola" />
                   </div>
                   <div className="member-info">
                     <h3>Abimbola</h3>
@@ -198,7 +205,7 @@ function About() {
                 </div>
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./public/images/AdobeStock_218066202.jpeg" alt="Jonas" />
+                    <img src={jonasImage} alt="Jonas" />
                   </div>
                   <div className="member-info">
                     <h3>Jonas</h3>
@@ -237,7 +244,7 @@ function About() {
                 </div>
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./public/images/team/placeholder.jpg" alt="Naomi" />
+                    <img src={placeholderImage} alt="Naomi" />
                   </div>
                   <div className="member-info">
                     <h3>Naomi</h3>
@@ -280,7 +287,7 @@ function About() {
               <div className="team-grid-single">
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./public/images/team/placeholder.jpg" alt="Aka" />
+                    <img src={placeholderImage} alt="Aka" />
                   </div>
                   <div className="member-info">
                     <h3>Aka</h3>
@@ -321,7 +328,7 @@ function About() {
                 </div>
                 <div className="team-member">
                   <div className="member-photo">
-                    <img src="./public/images/team/placeholder.jpg" alt="Gianna" />
+                    <img src={placeholderImage} alt="Gianna" />
                   </div>
                   <div className="member-info">
                     <h3>Gianna</h3>

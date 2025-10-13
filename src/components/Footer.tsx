@@ -1,15 +1,13 @@
 import React from "react";
+import agaLogo from "../assets/images/aga-logo.png";
+import mitLogo from "../assets/images/mit-logo-white.png";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <img
-            src="./public/images/Asset 1.png"
-            alt="MIT AGA Logo"
-            className="footer-aga-logo"
-          />
+          <img src={agaLogo} alt="MIT AGA Logo" className="footer-aga-logo" />
           <h3>MIT African Graduate Association</h3>
           <p>
             Where African scholarship meets innovation and global influence.
@@ -30,11 +28,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-section">
-          <img
-            src="./public/images/mit_logo_std_rgb_white.png"
-            alt="MIT Logo"
-            className="footer-mit-logo"
-          />
+          <img src={mitLogo} alt="MIT Logo" className="footer-mit-logo" />
           <h3>Massachusetts Institute of Technology</h3>
           <p>77 Massachusetts Avenue, Cambridge, MA, USA</p>
           <a href="#" className="footer-accessibility">

@@ -1,13 +1,17 @@
 import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
+import heroImage from "../assets/images/hero-dome.webp";
+
 function Resources() {
   return (
     <div>
       {/* Hero Section with Navigation */}
-      <HeroSection 
-      backgroundImage="./public/images/Massachusetts-Institute-of-Technology-Great-Dome-Building-10-and-Barker-Library__4-060693_00_DOME_N189_lrg-2560x1777.7777777778-c-default.webp"
-      backgroundAlt="Massachusetts Institute of Technology Great Dome">
+      <HeroSection
+        backgroundImage={heroImage}
+        backgroundAlt="Massachusetts Institute of Technology Great Dome"
+        sectionClassName="faq-hero"
+      >
         <h2 className="hero-headline">Resources &amp; Support</h2>
       </HeroSection>
 

@@ -1648,7 +1648,6 @@ body {
 }
 
 .faq-hero {
-  background: var(--dark-gray);
   height: auto;
   min-height: 40vh;
 }

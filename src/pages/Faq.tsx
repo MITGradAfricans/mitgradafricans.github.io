@@ -62,7 +62,6 @@ function Faq() {
 
   return (
     <div>
-      {/* Hero Section with Navigation */}
       <HeroSection
         backgroundImage={heroImage}
         backgroundAlt="Massachusetts Institute of Technology Great Dome"
@@ -71,7 +70,6 @@ function Faq() {
         <h2 className="hero-headline">Frequently Asked Questions</h2>
       </HeroSection>
 
-      {/* FAQ Content */}
       <section className="faq-content">
         <div className="faq-container">
           <div className="faq-list">

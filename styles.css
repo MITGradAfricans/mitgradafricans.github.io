@@ -727,7 +727,7 @@ body {
 }
 
 .cta-section::before {
-  content: "Nigeria · South Africa · Kenya · Egypt · Morocco · Algeria · Ghana · Ethiopia · Tanzania · Uganda · Sudan · Angola · Mozambique · Madagascar · Cameroon · Niger · Mali · Burkina Faso · Chad · Somalia · Senegal · Zimbabwe · Guinea · Rwanda · Benin · Burundi · Tunisia · Libya · Sierra Leone · Togo · Eritrea · Central African Republic · Liberia · Mauritania · Gambia · Botswana · Namibia · Lesotho · Gabon · Congo · Equatorial Guinea · Sao Tome and Principe · Seychelles · Comoros · Mauritius · Eswatini · Djibouti · Cabo Verde · Guinea-Bissau · Democratic Republic of the Congo · Côte d'Ivoire · Zambia · Malawi · South Sudan";
+  content: "Nigeria \00B7 South Africa \00B7 Kenya \00B7 Egypt \00B7 Morocco \00B7 Algeria \00B7 Ghana \00B7 Ethiopia \00B7 Tanzania \00B7 Uganda \00B7 Sudan \00B7 Angola \00B7 Mozambique \00B7 Madagascar \00B7 Cameroon \00B7 Niger \00B7 Mali \00B7 Burkina Faso \00B7 Chad \00B7 Somalia \00B7 Senegal \00B7 Zimbabwe \00B7 Guinea \00B7 Rwanda \00B7 Benin \00B7 Burundi \00B7 Tunisia \00B7 Libya \00B7 Sierra Leone \00B7 Togo \00B7 Eritrea \00B7 Central African Republic \00B7 Liberia \00B7 Mauritania \00B7 Gambia \00B7 Botswana \00B7 Namibia \00B7 Lesotho \00B7 Gabon \00B7 Congo \00B7 Equatorial Guinea \00B7 Sao Tome and Principe \00B7 Seychelles \00B7 Comoros \00B7 Mauritius \00B7 Eswatini \00B7 Djibouti \00B7 Cabo Verde \00B7 Guinea-Bissau \00B7 Democratic Republic of the Congo \00B7 Côte d'Ivoire \00B7 Zambia \00B7 Malawi \00B7 South Sudan";
   position: absolute;
   top: 0;
   left: 0;
@@ -754,7 +754,7 @@ body {
 }
 
 .cta-section::after {
-  content: "Mauritania · Gambia · Botswana · Namibia · Lesotho · Gabon · Congo · Equatorial Guinea · Sao Tome and Principe · Seychelles · Comoros · Mauritius · Eswatini · Djibouti · Cabo Verde · Guinea-Bissau · Democratic Republic of the Congo · Côte d'Ivoire · Zambia · Malawi · South Sudan · Nigeria · South Africa · Kenya · Egypt · Morocco · Algeria · Ghana · Ethiopia · Tanzania · Uganda · Sudan · Angola · Mozambique · Madagascar · Cameroon · Niger · Mali · Burkina Faso · Chad · Somalia · Senegal · Zimbabwe · Guinea · Rwanda · Benin · Burundi · Tunisia · Libya · Sierra Leone · Togo · Eritrea · Central African Republic · Liberia";
+  content: "Mauritania \00B7 Gambia \00B7 Botswana \00B7 Namibia \00B7 Lesotho \00B7 Gabon \00B7 Congo \00B7 Equatorial Guinea \00B7 Sao Tome and Principe \00B7 Seychelles \00B7 Comoros \00B7 Mauritius \00B7 Eswatini \00B7 Djibouti \00B7 Cabo Verde \00B7 Guinea-Bissau \00B7 Democratic Republic of the Congo \00B7 Côte d'Ivoire \00B7 Zambia \00B7 Malawi \00B7 South Sudan \00B7 Nigeria \00B7 South Africa \00B7 Kenya \00B7 Egypt \00B7 Morocco \00B7 Algeria \00B7 Ghana \00B7 Ethiopia \00B7 Tanzania \00B7 Uganda \00B7 Sudan \00B7 Angola \00B7 Mozambique \00B7 Madagascar \00B7 Cameroon \00B7 Niger \00B7 Mali \00B7 Burkina Faso \00B7 Chad \00B7 Somalia \00B7 Senegal \00B7 Zimbabwe \00B7 Guinea \00B7 Rwanda \00B7 Benin \00B7 Burundi \00B7 Tunisia \00B7 Libya \00B7 Sierra Leone \00B7 Togo \00B7 Eritrea \00B7 Central African Republic \00B7 Liberia";
   position: absolute;
   bottom: 0;
   left: 0;

@@ -1,0 +1,115 @@
+/* CTA marquee borders */
+.cta-section {
+  background: var(--dark-gray);
+  color: white;
+  padding: 8rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: "Nigeria \00B7 South Africa \00B7 Kenya \00B7 Egypt \00B7 Morocco \00B7 Algeria \00B7 Ghana \00B7 Ethiopia \00B7 Tanzania \00B7 Uganda \00B7 Sudan \00B7 Angola \00B7 Mozambique \00B7 Madagascar \00B7 Cameroon \00B7 Niger \00B7 Mali \00B7 Burkina Faso \00B7 Chad \00B7 Somalia \00B7 Senegal \00B7 Zimbabwe \00B7 Guinea \00B7 Rwanda \00B7 Benin \00B7 Burundi \00B7 Tunisia \00B7 Libya \00B7 Sierra Leone \00B7 Togo \00B7 Eritrea \00B7 Central African Republic \00B7 Liberia \00B7 Mauritania \00B7 Gambia \00B7 Botswana \00B7 Namibia \00B7 Lesotho \00B7 Gabon \00B7 Congo \00B7 Equatorial Guinea \00B7 Sao Tome and Principe \00B7 Seychelles \00B7 Comoros \00B7 Mauritius \00B7 Eswatini \00B7 Djibouti \00B7 Cabo Verde \00B7 Guinea-Bissau \00B7 Democratic Republic of the Congo \00B7 Côte d'Ivoire \00B7 Zambia \00B7 Malawi \00B7 South Sudan";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: var(--dark-gray);
+  color: var(--aga-yellow);
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 1rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: scroll-top 60s linear infinite;
+  z-index: 1;
+}
+
+.cta-section::after {
+  content: "Mauritania \00B7 Gambia \00B7 Botswana \00B7 Namibia \00B7 Lesotho \00B7 Gabon \00B7 Congo \00B7 Equatorial Guinea \00B7 Sao Tome and Principe \00B7 Seychelles \00B7 Comoros \00B7 Mauritius \00B7 Eswatini \00B7 Djibouti \00B7 Cabo Verde \00B7 Guinea-Bissau \00B7 Democratic Republic of the Congo \00B7 Côte d'Ivoire \00B7 Zambia \00B7 Malawi \00B7 South Sudan \00B7 Nigeria \00B7 South Africa \00B7 Kenya \00B7 Egypt \00B7 Morocco \00B7 Algeria \00B7 Ghana \00B7 Ethiopia \00B7 Tanzania \00B7 Uganda \00B7 Sudan \00B7 Angola \00B7 Mozambique \00B7 Madagascar \00B7 Cameroon \00B7 Niger \00B7 Mali \00B7 Burkina Faso \00B7 Chad \00B7 Somalia \00B7 Senegal \00B7 Zimbabwe \00B7 Guinea \00B7 Rwanda \00B7 Benin \00B7 Burundi \00B7 Tunisia \00B7 Libya \00B7 Sierra Leone \00B7 Togo \00B7 Eritrea \00B7 Central African Republic \00B7 Liberia";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: var(--dark-gray);
+  color: var(--aga-yellow);
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 1rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: scroll-bottom 60s linear infinite;
+  z-index: 1;
+}
+
+@keyframes scroll-top {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-bottom {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.city-scroll-container {
+  display: none;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-family: "arbotek", sans-serif;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.cta-content p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

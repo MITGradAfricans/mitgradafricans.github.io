@@ -1,0 +1,57 @@
+/* Stats section */
+.stats-section {
+  background: var(--light-gray);
+  padding: 6rem 0;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 2rem;
+}
+
+.stat-number {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: "arbotek", sans-serif;
+  color: var(--dark-gray);
+  margin-bottom: 1rem;
+}
+
+.stat-item:nth-child(1) .stat-number {
+  color: var(--aga-red);
+}
+
+.stat-item:nth-child(2) .stat-number {
+  color: var(--aga-yellow);
+}
+
+.stat-item:nth-child(3) .stat-number {
+  color: var(--aga-green);
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
+.stat-item:nth-child(1) .stat-label {
+  color: var(--aga-red);
+}
+
+.stat-item:nth-child(2) .stat-label {
+  color: var(--aga-yellow);
+}
+
+.stat-item:nth-child(3) .stat-label {
+  color: var(--aga-green);
+}

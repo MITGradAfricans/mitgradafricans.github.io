@@ -1,0 +1,99 @@
+/* Footer */
+.footer {
+  background: var(--black);
+  color: white;
+  padding: 4rem 0 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+
+.footer-section:last-child {
+  text-align: right;
+}
+
+.footer-section h3 {
+  color: var(--aga-yellow);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.footer-section p {
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.footer-aga-logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.footer-mit-logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+}
+
+.footer-accessibility {
+  color: #e0e0e0;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-accessibility:hover {
+  color: var(--aga-yellow);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  background: var(--dark-gray);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: var(--aga-yellow);
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--dark-gray);
+  color: #b0b0b0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

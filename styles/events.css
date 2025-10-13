@@ -1,0 +1,220 @@
+/* Generic events list */
+.upcoming-events {
+  margin-top: 2rem;
+}
+
+.event-item {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.event-date {
+  background: var(--aga-green);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-day {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.event-month {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.event-details h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.event-details p {
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.event-time {
+  color: var(--aga-green);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Upcoming Events cards */
+.upcoming-events-section {
+  margin: 4rem 0;
+}
+
+.upcoming-events-section .section-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-family: "arbotek", sans-serif;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.upcoming-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.event-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  display: flex;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.event-card .event-date {
+  background: var(--medium-brown);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  text-align: center;
+}
+
+.event-card .event-day {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "arbotek", sans-serif;
+  line-height: 1;
+  display: block;
+}
+
+.event-card .event-month {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.event-details {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.event-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-family: "arbotek", sans-serif;
+}
+
+.event-partner {
+  color: var(--aga-yellow);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.event-description {
+  color: var(--dark-gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-time,
+.event-venue {
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.event-time i,
+.event-venue i {
+  color: var(--aga-yellow);
+  width: 16px;
+}
+
+.calendar-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.calendar-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.calendar-wrapper iframe {
+  width: 100%;
+  height: 700px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-button-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .upcoming-events-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .event-card {
+    flex-direction: column;
+  }
+
+  .event-card .event-date {
+    min-width: auto;
+    padding: 1rem;
+  }
+
+  .event-card .event-day {
+    font-size: 1.5rem;
+  }
+
+  .event-details {
+    padding: 1rem;
+  }
+}

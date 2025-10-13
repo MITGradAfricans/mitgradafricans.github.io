@@ -8,11 +8,11 @@
       import favicon from "/src/assets/images/favicon.png";
 
       const addIcon = (rel, href, type, sizes) => {
-        const l = document.createElement("link");
-        l.rel = rel;
-        if (type) l.type = type;
-        if (sizes) l.sizes = sizes;
-        l.href = favicon;
+        const link = document.createElement("link");
+        link.rel = rel;
+        if (type) link.type = type;
+        if (sizes) link.sizes = sizes;
+        link.href = favicon;
         document.head.appendChild(l);
       };
 

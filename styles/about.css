@@ -1,0 +1,126 @@
+/* About page */
+.about-content {
+  background: white;
+  padding: 6rem 0;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-section {
+  margin-bottom: 6rem;
+}
+
+.about-section:last-child {
+  margin-bottom: 0;
+}
+
+.breakdown-section {
+  background: white;
+  padding: 6rem 0;
+  color: var(--text-color);
+}
+
+.breakdown-section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.breakdown-section-title {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-family: "arbotek", sans-serif;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.breakdown-item {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.breakdown-item:last-child {
+  margin-bottom: 0;
+}
+
+.breakdown-item.reverse {
+  direction: rtl;
+}
+
+.breakdown-item.reverse > * {
+  direction: ltr;
+}
+
+.breakdown-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.breakdown-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.breakdown-image:hover img {
+  transform: scale(1.05);
+}
+
+.breakdown-content {
+  padding: 2rem 0;
+}
+
+.breakdown-title {
+  font-family: "arbotek", sans-serif;
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 900;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.breakdown-item:nth-child(1) .breakdown-title {
+  color: var(--aga-red);
+}
+
+.breakdown-item:nth-child(2) .breakdown-title {
+  color: var(--aga-yellow);
+}
+
+.breakdown-item:nth-child(3) .breakdown-title {
+  color: var(--aga-green);
+}
+
+.about-section .breakdown-item:nth-child(3) .breakdown-title {
+  color: var(--aga-red);
+}
+
+.about-section .breakdown-item:nth-child(4) .breakdown-title {
+  color: var(--aga-yellow);
+}
+
+.about-section .breakdown-item:nth-child(5) .breakdown-title {
+  color: var(--aga-green);
+}
+
+.breakdown-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}

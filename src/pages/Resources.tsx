@@ -6,7 +6,6 @@ import heroImage from "../assets/images/hero-dome.webp";
 function Resources() {
   return (
     <div>
-      {/* Hero Section with Navigation */}
       <HeroSection
         backgroundImage={heroImage}
         backgroundAlt="Massachusetts Institute of Technology Great Dome"
@@ -15,7 +14,6 @@ function Resources() {
         <h2 className="hero-headline">Resources &amp; Support</h2>
       </HeroSection>
 
-      {/* Resources Content */}
       <section className="about-content">
         <div className="about-container">
           <div className="resources-grid">
@@ -88,10 +86,8 @@ function Resources() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <CtaSection />
 
-      {/* Footer */}
       <Footer />
     </div>
   );

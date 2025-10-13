@@ -1,0 +1,86 @@
+/* Button styles */
+.btn {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: var(--aga-red);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--aga-red-dark);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.btn-secondary:hover {
+  background: var(--white);
+  color: var(--aga-green);
+  transform: translateY(-2px);
+}
+
+.btn-learn-more {
+  background: var(--aga-green);
+  color: var(--white);
+  border-color: var(--aga-green);
+}
+
+.btn-learn-more:hover {
+  background: var(--aga-green-dark);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-gallery {
+  background: var(--dark-gray);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-gallery:hover {
+  background: var(--black);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(64, 64, 64, 0.3);
+}
+
+.btn-breakdown {
+  background: var(--dark-gray);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-breakdown:hover {
+  background: var(--black);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(64, 64, 64, 0.3);
+}

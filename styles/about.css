@@ -29,6 +29,16 @@
   margin-bottom: 4rem;
 }
 
+.about-pillars-intro {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  text-align: center;
+}
+
 .breakdown-section-title {
   font-size: clamp(2.5rem, 6vw, 3.5rem);
   font-family: "arbotek", sans-serif;
@@ -105,15 +115,15 @@
   color: var(--aga-green);
 }
 
-.about-section .breakdown-item:nth-child(3) .breakdown-title {
+.breakdown-title-aga-red {
   color: var(--aga-red);
 }
 
-.about-section .breakdown-item:nth-child(4) .breakdown-title {
+.breakdown-title-aga-yellow {
   color: var(--aga-yellow);
 }
 
-.about-section .breakdown-item:nth-child(5) .breakdown-title {
+.breakdown-title-aga-green {
   color: var(--aga-green);
 }
 

@@ -42,7 +42,7 @@ const faqData = [
     answer: (
       <>
         You can make donations{" "}
-        <a href="#" target="_blank" rel="noopener">
+        <a href="https://giving.mit.edu/search/node/2861476" target="_blank" rel="noopener">
           here
         </a>
         . Thanks for supporting us!

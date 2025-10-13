@@ -2,7 +2,7 @@
   "name": "aga-website",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://jonassog.github.io/aga-website",
+  "homepage": "https://mitgradafricans.github.io/aga-website/",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

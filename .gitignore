@@ -18,3 +18,5 @@ node_modules/
 # Build outputs
 dist/
 build/
+
+.DS_Store

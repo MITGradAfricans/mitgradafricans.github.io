@@ -52,7 +52,6 @@ function About() {
 
       <section className="about-content">
         <div className="about-container">
-          {/* Mission Section */}
           <div className="about-section">
             <div className="section-content">
               <div className="text-block">
@@ -118,9 +117,6 @@ function About() {
           </div>
 
           <div className="about-section">
-            <div className="breakdown-section-header">
-              <h2 className="breakdown-section-title">Our Team</h2>
-            </div>
             <TeamMembers />
           </div>
         </div>

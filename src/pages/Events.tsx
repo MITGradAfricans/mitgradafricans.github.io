@@ -84,7 +84,6 @@ function Events() {
               </div>
             </div>
 
-            {/* View Gallery Button */}
             <div className="gallery-button-container">
               <a
                 href="https://www.instagram.com/mitaga"
@@ -99,10 +98,8 @@ function Events() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <CtaSection />
 
-      {/* Footer */}
       <Footer />
     </div>
   );

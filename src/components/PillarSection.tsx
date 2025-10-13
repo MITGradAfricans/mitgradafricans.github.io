@@ -1,5 +1,6 @@
 import React from "react";
 import Pillar from "./Pillar";
+import { Link } from "react-router-dom";
 
 const pillars = [
   {
@@ -67,13 +68,13 @@ const PillarSection: React.FC = () => (
       ))}
     </div>
     <div style={{ textAlign: "center", marginTop: "4rem" }}>
-      <a
-        href="about.html"
+      <Link
+        to="/about"
         className="btn btn-learn-more"
         style={{ fontSize: "1.1rem", padding: "1.2rem 3rem" }}
       >
         Learn More
-      </a>
+      </Link>
     </div>
   </section>
 );

@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/aga-website/', // 👈 must match your repo name
+  base: '/', // 👈 must match your repo name
 })

@@ -9,10 +9,12 @@ export interface PillarProps {
 
 const Pillar: React.FC<PillarProps> = ({ icon, title, description, style }) => (
   <div style={style}>
-    <div style={{ fontSize: "4rem", marginBottom: "1rem" }}>{icon}</div>
+    <div style={{ fontSize: "clamp(2rem, 8vw, 4rem)", marginBottom: "1rem" }}>
+      {icon}
+    </div>
     <h3
       style={{
-        fontSize: "2.5rem",
+        fontSize: "clamp(1.5rem, 6vw, 2.5rem)",
         fontWeight: 900,
         marginBottom: "1rem",
         fontFamily: "arbotek, sans-serif",
@@ -20,7 +22,15 @@ const Pillar: React.FC<PillarProps> = ({ icon, title, description, style }) => (
     >
       {title}
     </h3>
-    <p style={{ fontSize: "1.1rem", lineHeight: 1.6, opacity: 0.95 }}>{description}</p>
+    <p
+      style={{
+        fontSize: "clamp(0.95rem, 3.2vw, 1.1rem)",
+        lineHeight: 1.6,
+        opacity: 0.95,
+      }}
+    >
+      {description}
+    </p>
   </div>
 );
 

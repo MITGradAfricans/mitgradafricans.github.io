@@ -57,12 +57,8 @@ const PillarSection: React.FC = () => (
         <Pillar key={pillar.title} {...pillar} />
       ))}
     </div>
-    <div style={{ textAlign: "center", marginTop: "4rem" }}>
-      <Link
-        to="/about"
-        className="btn btn-learn-more"
-        style={{ fontSize: "1.1rem", padding: "1.2rem 3rem" }}
-      >
+    <div className="pillars-cta-wrapper">
+      <Link to="/about" className="btn btn-learn-more pillars-cta">
         Learn More
       </Link>
     </div>

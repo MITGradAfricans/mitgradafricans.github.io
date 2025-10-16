@@ -100,7 +100,7 @@ function Faq() {
           <div className="faq-contact">
             <p>
               If your question is not on the list, feel free to fill out this
-              form to send us your specific question:<span>{ }</span>
+              form to send us your specific question:<span>{" "}</span>
               <a
                 href="https://forms.gle/agNbPNpu5UrkWhmw9"
                 target="_blank"

@@ -38,6 +38,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     const sectionEl = sectionRef.current;
     if (!navEl) return;
 
+    const isMobileLayout =
+      typeof window !== "undefined" &&
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(max-width: 768px)").matches;
+
+    if (isMobileLayout) {
+      navEl.classList.add("fixed");
+      return;
+    }
+
     // Prefer IntersectionObserver for smooth class toggling
     let observer: IntersectionObserver | null = null;
     if (sentinel && "IntersectionObserver" in window) {

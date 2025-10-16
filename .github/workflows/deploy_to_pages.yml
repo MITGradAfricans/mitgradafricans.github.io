@@ -36,4 +36,4 @@ jobs:
         run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
       - name: Deploy to GitHub Pages
-        run: npx gh-pages -d dist
+        run: npx gh-pages -d dist -c aga.mit.edu

@@ -246,7 +246,7 @@
   }
   .team-member:hover .member-photo img {
     transform: none;
-    filter: grayscale(1);
+    filter: none;
   }
   .member-info {
     position: static;
@@ -258,7 +258,6 @@
   }
   .team-member:hover .member-info {
     background: var(--dark-gray);
-    padding: 1.4rem;
   }
   .member-info h3 {
     margin: 0 0 0.75rem 0;

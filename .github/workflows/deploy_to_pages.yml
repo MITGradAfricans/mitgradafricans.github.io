@@ -2,41 +2,38 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ master ]   # or main
-  workflow_dispatch:
+    branches:
+      - master
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  contents: write  # needed to push to gh-pages branch
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run build                     # outputs to ./dist
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist                         # publish the built site
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          cname: aga.mit.edu                   # writes CNAME each deploy
+          node-version: '20'   # or your project's version
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build     # make sure this outputs to 'dist'
+
+      - name: Configure git identity
+        run: |
+          git config user.name "MITGradAfricans"
+          git config user.email "aga-exec@mit.edu"
+
+      - name: Set up authenticated remote
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+      - name: Deploy to GitHub Pages
+        run: npx gh-pages -d dist

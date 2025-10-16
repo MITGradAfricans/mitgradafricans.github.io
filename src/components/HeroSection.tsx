@@ -35,22 +35,39 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   useEffect(() => {
     const navEl = navRef.current;
     const sentinel = sentinelRef.current;
-    if (!navEl || !sentinel) return;
+    const sectionEl = sectionRef.current;
+    if (!navEl) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          navEl.classList.remove("fixed");
-        } else {
-          navEl.classList.add("fixed");
-        }
-      },
-      { threshold: 0, rootMargin: "-80px 0px 0px 0px" },
-    );
+    // Prefer IntersectionObserver for smooth class toggling
+    let observer: IntersectionObserver | null = null;
+    if (sentinel && "IntersectionObserver" in window) {
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            navEl.classList.remove("fixed");
+          } else {
+            navEl.classList.add("fixed");
+          }
+        },
+        { threshold: 0, rootMargin: "-80px 0px 0px 0px" },
+      );
+      observer.observe(sentinel);
+    }
 
-    observer.observe(sentinel);
+    // Fallback for environments where IO can be flaky
+    const onScroll = () => {
+      if (!sectionEl) return;
+      const sectionBottom = sectionEl.getBoundingClientRect().bottom;
+      if (sectionBottom <= 80) navEl.classList.add("fixed");
+      else navEl.classList.remove("fixed");
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (observer) observer.disconnect();
+    };
   }, []);
 
   return (

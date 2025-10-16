@@ -64,14 +64,87 @@
     font-size: 1.1rem;
   }
 
-  .nav-links {
-    gap: 1.5rem;
-    flex-wrap: wrap;
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    font-size: 1.1rem;
+    align-self: flex-end;
   }
 
-  .hero-nav.fixed .nav-links {
+  .nav-links {
+    display: none;
+  }
+
+  /* Drawer styles */
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 2000;
+  }
+
+  .nav-backdrop.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav-drawer {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(360px, 85vw);
+    background: var(--dark-gray);
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    box-shadow: -12px 0 30px rgba(0, 0, 0, 0.35);
+    z-index: 2100;
+    flex-direction: column;
     gap: 1rem;
+    align-items: flex-start; /* prevent links from stretching full width */
+  }
+
+  .nav-drawer.open {
+    transform: translateX(0);
+  }
+
+  .nav-close {
+    display: inline-flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+  }
+
+  /* Ensure overlay isn't clipped by hero section on mobile */
+  .hero-section {
+    overflow: visible;
+  }
+
+  /* Drawer link sizing and active indicator */
+  .nav-link--drawer {
+    width: auto;
+    display: inline-flex;
+    font-size: 1rem;
+  }
+  .nav-link--drawer.active::after {
+    width: 48px; /* short underline under text, not full width */
+    left: 0;
   }
 
   .nav-link {

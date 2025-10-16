@@ -22,11 +22,17 @@ function Events() {
         }
       } catch (err) {
         if (isActive) {
-          setError(
-            err instanceof Error
-              ? err.message
-              : "An unexpected error occurred while loading events."
-          );
+          if (err instanceof Error && err.name === "MissingGoogleApiKeyError") {
+            console.warn(err.message);
+            setError(
+              "Our events calendar is being configured. Please check back soon."
+            );
+          } else {
+            console.error("Failed to load Google Calendar events", err);
+            setError(
+              "We couldn't load events right now. Please try again later."
+            );
+          }
         }
       } finally {
         if (isActive) {
@@ -69,9 +75,7 @@ function Events() {
                 <p className="event-status-message">Loading events...</p>
               )}
               {!loading && error && (
-                <p className="event-status-message">
-                  Could not load events: {error}
-                </p>
+                <p className="event-status-message">{error}</p>
               )}
               {!loading && !error && upcomingEvents.length === 0 && (
                 <p className="event-status-message">

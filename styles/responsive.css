@@ -125,7 +125,17 @@
     z-index: 2100;
     flex-direction: column;
     gap: 1rem;
-    align-items: flex-start; /* prevent links from stretching full width */
+    align-items: flex-start;
+  }
+
+  .nav-link--drawer {
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  .nav-link--drawer.active::after {
+    width: 100%;
+    left: 0;
   }
 
   .nav-drawer.open {
@@ -151,16 +161,6 @@
   }
 
   /* Drawer link sizing and active indicator */
-  .nav-link--drawer {
-    width: auto;
-    display: inline-flex;
-    font-size: 1rem;
-  }
-  .nav-link--drawer.active::after {
-    width: 48px; /* short underline under text, not full width */
-    left: 0;
-  }
-
   .nav-link {
     font-size: 0.8rem;
   }

@@ -55,7 +55,9 @@ const formatTime = (isoDate?: string) => {
 
 export async function fetchUpcomingEvents(): Promise<UpcomingEvent[]> {
   if (!API_KEY) {
-    throw new Error("Missing VITE_GOOGLE_API_KEY environment variable.");
+    const error = new Error("Google Calendar API key is not configured.");
+    error.name = "MissingGoogleApiKeyError";
+    throw error;
   }
 
   const url = new URL(

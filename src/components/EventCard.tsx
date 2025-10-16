@@ -4,7 +4,6 @@ export type UpcomingEvent = {
   day: string;
   month: string;
   title: string;
-  partner: string;
   description: string;
   time: string;
   venue: string;
@@ -24,7 +23,6 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => (
       <h3 className="event-title" style={{ color: "var(--aga-red)" }}>
         {event.title}
       </h3>
-      <p className="event-partner">{event.partner}</p>
       <p className="event-description">{event.description}</p>
       <div className="event-meta">
         <span className="event-time" style={{ color: "var(--aga-green)" }}>

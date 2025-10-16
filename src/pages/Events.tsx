@@ -1,44 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import heroImage from "../assets/images/hero-dome.webp";
 import EventCard, { UpcomingEvent } from "../components/EventCard";
-
-const upcomingEvents: UpcomingEvent[] = [
-  {
-    day: "15",
-    month: "Jan",
-    title: "African Innovation Workshop",
-    partner: "Partner: MIT Innovation Initiative",
-    description:
-      "Join us for an interactive workshop exploring African innovation ecosystems and opportunities for collaboration.",
-    time: "2:00 PM - 4:00 PM",
-    venue: "Building 10, Room 105",
-  },
-  {
-    day: "18",
-    month: "Jan",
-    title: "Networking Mixer",
-    partner: "Partner: MIT African Students Association",
-    description:
-      "Connect with fellow African students, alumni, and professionals in a relaxed networking environment.",
-    time: "6:00 PM - 8:00 PM",
-    venue: "Student Center, Room 407",
-  },
-  {
-    day: "22",
-    month: "Jan",
-    title: "Career Development Seminar",
-    partner: "Partner: MIT Career Services",
-    description:
-      "Learn about career opportunities in Africa and strategies for professional development in STEM fields.",
-    time: "3:00 PM - 5:00 PM",
-    venue: "Building 3, Room 270",
-  },
-];
+import { fetchUpcomingEvents } from "../services/googleCalendar";
 
 function Events() {
+  const [upcomingEvents, setUpcomingEvents] = useState<UpcomingEvent[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let isActive = true;
+
+    async function loadEvents() {
+      try {
+        const events = await fetchUpcomingEvents();
+        if (isActive) {
+          setUpcomingEvents(events);
+        }
+      } catch (err) {
+        if (isActive) {
+          setError(
+            err instanceof Error
+              ? err.message
+              : "An unexpected error occurred while loading events."
+          );
+        }
+      } finally {
+        if (isActive) {
+          setLoading(false);
+        }
+      }
+    }
+
+    loadEvents();
+
+    return () => {
+      isActive = false;
+    };
+  }, []);
+
   return (
     <div>
       <HeroSection
@@ -62,6 +65,19 @@ function Events() {
 
             <div className="upcoming-events-section">
               <h2 className="section-title">Upcoming Events</h2>
+              {loading && (
+                <p className="event-status-message">Loading events...</p>
+              )}
+              {!loading && error && (
+                <p className="event-status-message">
+                  Could not load events: {error}
+                </p>
+              )}
+              {!loading && !error && upcomingEvents.length === 0 && (
+                <p className="event-status-message">
+                  No upcoming events are scheduled yet. Please check back soon.
+                </p>
+              )}
               <div className="upcoming-events-grid">
                 {upcomingEvents.map((event) => (
                   <EventCard

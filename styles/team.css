@@ -8,9 +8,9 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 3rem;
-  align-items: start;
+  align-items: stretch;
   width: 100%;
 }
 
@@ -55,7 +55,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: grayscale(1);
   transition:
     filter 0.5s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -77,25 +76,23 @@
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
   z-index: 2;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: padding 0.3s ease, background 0.3s ease, justify-content 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  height: 100px;
-  justify-content: flex-end;
-  overflow: hidden;
+  gap: 0;
+  padding: 1.2rem 1.4rem;
+  min-height: 100px;
+  justify-content: center;
 }
 
 .member-info h3 {
   color: #fff;
   font-size: 1.15rem;
   font-weight: 700;
-  margin: 0 0 1rem 1.2rem;
+  margin: 0;
   font-family: "Inter", sans-serif;
-  transition:
-    margin 0.4s,
-    color 0.4s;
+  transition: color 0.3s ease;
+  line-height: 1.2;
   z-index: 2;
 }
 
@@ -114,12 +111,9 @@
 }
 
 .team-member:hover .member-info {
-  height: 160px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 90%, rgba(0, 0, 0, 0) 100%);
-  padding: 1.2rem;
-  transition:
-    height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    background 0.3s;
+  background: rgba(0, 0, 0, 0.92);
+  padding: 1.2rem 1.2rem 1.5rem;
+  justify-content: flex-start;
 }
 
 .team-member:hover .member-info h3 {
@@ -140,26 +134,26 @@
 .member-role {
   font-size: 0.9rem;
   font-weight: 600;
-  margin-left: 1.2rem;
+  margin-left: 0;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .member-dept {
   font-size: 0.85rem;
-  margin-left: 1.2rem;
+  margin-left: 0;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .member-country {
   font-size: 0.85rem;
-  margin-left: 1.2rem;
+  margin-left: 0;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .member-socials {
   display: flex;
   gap: 0.75rem;
-  margin-left: 1.2rem;
+  margin-left: 0;
   margin-top: 0.75rem;
 }
 
@@ -223,21 +217,6 @@
 .member-quick-links .quick-link:hover {
   background: var(--aga-green);
   transform: translateY(-2px);
-}
-
-.team-grid-single {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  margin-top: 3rem;
-  width: 100%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.team-grid-single .team-member {
-  max-width: none;
 }
 
 .quick-link {

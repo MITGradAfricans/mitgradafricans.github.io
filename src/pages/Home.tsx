@@ -16,10 +16,10 @@ function Home() {
         backgroundAlt="Massachusetts Institute of Technology Great Dome"
       >
         <h2 className="hero-headline">
-          Where
+          Where{" "}
           <span className="highlight">African scholarship</span> meets
           <br />
-          <span className="highlight-yellow">innovation</span>
+          <span className="highlight-yellow">innovation </span>
           and <span className="highlight-green">global influence</span>.
         </h2>
       </HeroSection>

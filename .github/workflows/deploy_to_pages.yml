@@ -3,10 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - master 
 
 permissions:
-  contents: write  # needed to push to gh-pages branch
+  contents: write  
 
 jobs:
   deploy:
@@ -19,21 +19,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'   # or your project's version
+          node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build project
-        run: npm run build     # make sure this outputs to 'dist'
+        run: npm run build   
 
-      - name: Configure git identity
-        run: |
-          git config user.name "MITGradAfricans"
-          git config user.email "aga-exec@mit.edu"
-
-      - name: Set up authenticated remote
-        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-
-      - name: Deploy to GitHub Pages
-        run: npx gh-pages -d dist
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./dist
+          cname: aga.mit.edu

@@ -12,40 +12,27 @@ function Events() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    let isActive = true;
+    setLoading(true);
+    setError(null);
 
-    async function loadEvents() {
-      try {
-        const events = await fetchUpcomingEvents();
-        if (isActive) {
-          setUpcomingEvents(events);
+    fetchUpcomingEvents()
+      .then((events) => {
+        setUpcomingEvents(events);
+      })
+      .catch((error) => {
+        let message = "We couldn't load events right now. Please try again later.";
+        if (error instanceof Error && error.name === "MissingGoogleApiKeyError") {
+          console.warn(error.message);
+          message =
+            "Our events calendar is being configured. Please check back soon.";
+        } else {
+          console.error("Failed to load Google Calendar events", error);
         }
-      } catch (err) {
-        if (isActive) {
-          if (err instanceof Error && err.name === "MissingGoogleApiKeyError") {
-            console.warn(err.message);
-            setError(
-              "Our events calendar is being configured. Please check back soon."
-            );
-          } else {
-            console.error("Failed to load Google Calendar events", err);
-            setError(
-              "We couldn't load events right now. Please try again later."
-            );
-          }
-        }
-      } finally {
-        if (isActive) {
-          setLoading(false);
-        }
-      }
-    }
-
-    loadEvents();
-
-    return () => {
-      isActive = false;
-    };
+        setError(message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   return (

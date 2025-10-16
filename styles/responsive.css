@@ -88,6 +88,22 @@
     font-size: clamp(2rem, 4vw, 2.5rem);
   }
 
+  .mission-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .mission-left,
+  .mission-right {
+    text-align: center;
+  }
+  .mission-title {
+    margin: 0 auto 2rem;
+    max-width: 24ch;
+  }
+  .mission-description {
+    font-size: 1.05rem;
+  }
+
   .breakdown-section {
     padding: 4rem 0;
   }

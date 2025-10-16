@@ -81,7 +81,7 @@ function Faq() {
                   onClick={() => toggleFaq(idx)}
                   style={{ cursor: "pointer" }}
                 >
-                  <span className="faq-bullet">&bull;</span> {item.question}
+                  {item.question}
                   <span className="faq-arrow">
                     {openIndexes.includes(idx) ? "▲" : "▼"}
                   </span>
@@ -100,7 +100,7 @@ function Faq() {
           <div className="faq-contact">
             <p>
               If your question is not on the list, feel free to fill out this
-              form to send us your specific question:
+              form to send us your specific question:<span>{ }</span>
               <a
                 href="https://forms.gle/agNbPNpu5UrkWhmw9"
                 target="_blank"

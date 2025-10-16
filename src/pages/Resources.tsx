@@ -2,6 +2,7 @@ import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import heroImage from "../assets/images/hero-dome.webp";
+import { Link } from "react-router-dom";
 
 function Resources() {
   return (
@@ -26,9 +27,9 @@ function Resources() {
                 Access study materials, research papers, and academic support
                 resources tailored for African graduate students.
               </p>
-              <a href="about.html" className="btn btn-learn-more">
+              <Link to="/about" className="btn btn-learn-more">
                 Learn More
-              </a>
+              </Link>
             </div>
             <div className="resource-card">
               <div className="resource-icon">
@@ -39,9 +40,9 @@ function Resources() {
                 Explore career opportunities, networking events, and
                 professional development resources for African professionals.
               </p>
-              <a href="about.html" className="btn btn-learn-more">
+              <Link to="/about" className="btn btn-learn-more">
                 Learn More
-              </a>
+              </Link>
             </div>
             <div className="resource-card">
               <div className="resource-icon">
@@ -52,9 +53,9 @@ function Resources() {
                 Connect with fellow African students, alumni, and community
                 members for mentorship and support.
               </p>
-              <a href="about.html" className="btn btn-learn-more">
+              <Link to="/about" className="btn btn-learn-more">
                 Learn More
-              </a>
+              </Link>
             </div>
             <div className="resource-card">
               <div className="resource-icon">
@@ -65,9 +66,9 @@ function Resources() {
                 Discover opportunities to contribute to African development
                 projects and initiatives.
               </p>
-              <a href="about.html" className="btn btn-learn-more">
+              <Link to="/about" className="btn btn-learn-more">
                 Learn More
-              </a>
+              </Link>
             </div>
             <div className="resource-card">
               <div className="resource-icon">
@@ -78,9 +79,9 @@ function Resources() {
                 Stay updated on upcoming events, workshops, and cultural
                 activities organized by AGA.
               </p>
-              <a href="about.html" className="btn btn-learn-more">
+              <Link to="/events" className="btn btn-learn-more">
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>

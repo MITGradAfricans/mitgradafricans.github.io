@@ -40,6 +40,31 @@ npm run typecheck
 npm run lint
 ```
 
+## Environment Variables
+
+This repo uses Vite’s `import.meta.env` conventions. Add secrets locally in `.env.local` (already git‑ignored):
+
+```bash
+VITE_GOOGLE_API_KEY=your-browser-api-key
+```
+
+The key should:
+
+- Be restricted to the `Google Calendar API`.
+- Accept only your production origins (`https://aga.mit.edu`, `https://mitgradafricans.github.io`) plus any dev ports (e.g. `http://localhost:5173`).
+
+When you change any secret used in the GitHub Actions workflow, re-run the deploy job (or push a commit) so the bundle gets rebuilt with the new value.
+
+## Google Calendar Integration
+
+`src/services/googleCalendar.ts` wraps the Calendar REST API and powers the Upcoming Events grid. The helper:
+
+- Reads `VITE_GOOGLE_API_KEY` during build time.
+- Fetches six upcoming single events, ordered by start time, and maps them into the `EventCard` shape.
+- Surfaces friendly fallback messages when the key is missing or the API errors.
+
+If the key is not available, users see “Our events calendar is being configured. Please check back soon.” Once the API key is configured, both local (`npm run dev`) and production builds display the live events while the embedded iframe remains as a backup.
+
 ## Scripts
 
 - `dev` — Run Vite dev server
@@ -90,6 +115,7 @@ There are two supported flows:
 - Trigger: push to `master`
 - Steps: install → build → push `dist/` to `gh-pages`
 - Configure the repo to serve Pages from the `gh-pages` branch (root).
+- Secrets: add `VITE_GOOGLE_API_KEY` as an Actions secret (repository-level, or environment-level with `environment: github-pages` on the job) so `npm run build` can embed it. Re-run the workflow after creating or updating the secret.
 
 2) Manual CLI deploy
 

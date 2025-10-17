@@ -7,9 +7,9 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { target: 60, suffix: "+", label: "Active Members" },
+  { target: 100, suffix: "+", label: "Active Members" },
   { target: 15, suffix: "+", label: "Countries Represented" },
-  { target: 20, suffix: "+", label: "Events Per Year" },
+  { target: 15, suffix: "+", label: "Events Per Year" },
 ];
 
 const StatsSection: React.FC = () => {

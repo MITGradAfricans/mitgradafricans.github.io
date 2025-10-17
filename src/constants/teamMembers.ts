@@ -16,7 +16,7 @@ export const teamMembers: TeamMemberProps[] = [
       "https://www.linkedin.com/in/abimbolaoluwade/",
   },
   {
-    name: "Jonas Sogbadji",
+    name: "Jonas Sog",
     role: "Co-President",
     dept: "Mechanical Engineering",
     country: "🇹🇬 Togo",

@@ -113,8 +113,7 @@ There are two supported flows:
 
 - Workflow: `.github/workflows/deploy_to_pages.yml`
 - Trigger: push to `master`
-- Steps: install → build → push `dist/` to `gh-pages`
-- Configure the repo to serve Pages from the `gh-pages` branch (root).
+- Website automatically updates once this workflow is triggered
 - Secrets: add `VITE_GOOGLE_API_KEY` as an Actions secret (repository-level, or environment-level with `environment: github-pages` on the job) so `npm run build` can embed it. Re-run the workflow after creating or updating the secret.
 
 2) Manual CLI deploy

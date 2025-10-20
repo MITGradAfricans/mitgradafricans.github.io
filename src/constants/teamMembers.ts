@@ -1,5 +1,5 @@
 import { TeamMemberProps } from "../components/TeamMember";
-import jonasPhoto from "../assets/images/team/jonas.jpeg";
+import jonasPhoto from "../assets/images/team/placeholder2.jpeg";
 import giannaPhoto from "../assets/images/team/gianna.png";
 import abimbolaPhoto from "../assets/images/team/abimbola.jpeg"
 import akaPhoto from "../assets/images/team/aka.jpeg"

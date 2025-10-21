@@ -1,8 +1,9 @@
 import { TeamMemberProps } from "../components/TeamMember";
-import jonasPhoto from "../assets/images/team/placeholder2.jpeg";
+import jonasPhoto from "../assets/images/team/jonas.jpg";
 import giannaPhoto from "../assets/images/team/gianna.png";
 import abimbolaPhoto from "../assets/images/team/abimbola.jpeg"
 import akaPhoto from "../assets/images/team/aka.jpeg"
+import placeholderPhoto from "../assets/images/hero-dome.webp"
 
 export const teamMembers: TeamMemberProps[] = [
   {
@@ -30,7 +31,7 @@ export const teamMembers: TeamMemberProps[] = [
     role: "Treasurer",
     dept: "Electrical Engineering & Computer Science",
     country: "🇰🇪 Kenya",
-    photo: jonasPhoto,
+    photo: placeholderPhoto,
     email: "nkirimi@mit.edu",
     linkedin:
       "https://www.linkedin.com/in/naomi-k-7bb100183/",

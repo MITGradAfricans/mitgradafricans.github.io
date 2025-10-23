@@ -8,6 +8,7 @@ export interface TeamMemberProps {
   photo: string;
   email: string;
   linkedin: string;
+  showSocials?: boolean;
 }
 
 const TeamMember: React.FC<TeamMemberProps> = ({
@@ -18,6 +19,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   photo,
   email,
   linkedin,
+  showSocials = true,
 }) => (
   <div className="team-member">
     <div className="member-photo">

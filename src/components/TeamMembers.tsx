@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TeamMember from "./TeamMember";
 import { teamMembers } from "../constants/teamMembers";
 
@@ -13,8 +13,8 @@ const TeamMembers: React.FC = () => (
           <TeamMember key={member.name} {...member} />
         ))}
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default TeamMembers;

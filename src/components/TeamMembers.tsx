@@ -13,8 +13,8 @@ const TeamMembers: React.FC = () => (
           <TeamMember key={member.name} {...member} />
         ))}
       </div>
+    </div>
     </section>
   );
-};
 
 export default TeamMembers;

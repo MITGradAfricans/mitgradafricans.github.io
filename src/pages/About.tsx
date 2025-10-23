@@ -4,10 +4,9 @@ import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import TeamMembers from "../components/TeamMembers";
 import heroImage from "../assets/images/hero-dome.webp";
-import aboutCommunityImage from "../assets/images/about-community.jpg";
-import pillarAimImage from "../assets/images/pillar-aim.jpeg";
-import pillarActImage from "../assets/images/pillar-act.jpeg";
-import pillarAfricaImage from "../assets/images/pillar-africa.jpeg";
+import pillarAimImage from "../assets/images/aim.png";
+import pillarActImage from "../assets/images/act.png";
+import pillarAfricaImage from "../assets/images/africa.png";
 
 function About() {
   const pillars = useMemo(
@@ -37,7 +36,7 @@ function About() {
         accent: "aga-green",
       },
     ],
-    [],
+    []
   );
 
   return (
@@ -53,9 +52,29 @@ function About() {
       <section className="about-content">
         <div className="about-container">
           <div className="about-section">
-            <div className="section-content">
-              <div className="text-block">
-                <p>
+            <div className="breakdown-item">
+              <div
+                className="breakdown-image"
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                }}
+              >
+                <h2
+                  className="breakdown-section-title"
+                  style={{ margin: "0 0 0.5rem 0" }}
+                >
+                  We are a
+                </h2>
+                <h3 className="breakdown-title" style={{ margin: "0" }}>
+                  <span style={{ color: "#d62828" }}>Network</span>{" "}
+                  <span style={{ color: "#f7b32b" }}>for</span>{" "}
+                  <span style={{ color: "#3b863b" }}>Impact</span>
+                </h3>
+              </div>
+              <div className="breakdown-content">
+                <p className="breakdown-text">
                   The MIT African Graduate Association (AGA) fosters a strong,
                   supportive community for African graduate scholars, enriching
                   them academically, professionally, and culturally. AGA
@@ -64,37 +83,33 @@ function About() {
                   initiatives to drive developmental and social change across
                   the continent.
                 </p>
-                <p>
+                <p className="breakdown-text">
                   We are a vibrant community dedicated to supporting African
                   graduate students at the Massachusetts Institute of
                   Technology. We foster academic excellence, professional
                   growth, and cultural exchange while building lasting
-                  connections within the MIT community and beyond.
+                  connections within the MIT community and beyond. It is through
+                  these connections that we move from theory to action,
+                  translating our scholarship into tangible, real-world impact
+                  across the African continent.
                 </p>
-              </div>
-              <div className="image-block">
-                <img
-                  src={aboutCommunityImage}
-                  alt="MIT AGA Community"
-                  className="section-image"
-                />
               </div>
             </div>
           </div>
 
           <div className="about-section">
             <div className="breakdown-section-header">
-              <h2 className="breakdown-section-title">Our Pillars</h2>
+              <h2 className="breakdown-section-title">Our Three A's</h2>
             </div>
 
             <div className="about-pillars-intro">
               <p>
                 The MIT African Graduate Association (AGA) is committed to
-                advancing the United Nations Sustainable Development Goals (SDGs)
-                through our three core pillars. By fostering African scholarship,
-                driving innovation, and connecting talent to the continent, we
-                align with SDGs such as quality education, decent work, reduced
-                inequalities, and global partnerships.
+                advancing the United Nations Sustainable Development Goals
+                (SDGs) through our three core pillars. By fostering African
+                scholarship, driving innovation, and connecting talent to the
+                continent, we align with SDGs such as quality education, decent
+                work, reduced inequalities, and global partnerships.
               </p>
             </div>
 
@@ -107,7 +122,9 @@ function About() {
                   <img src={pillar.image} alt={pillar.alt} />
                 </div>
                 <div className="breakdown-content">
-                  <h3 className={`breakdown-title breakdown-title-${pillar.accent}`}>
+                  <h3
+                    className={`breakdown-title breakdown-title-${pillar.accent}`}
+                  >
                     {pillar.title}
                   </h3>
                   <p className="breakdown-text">{pillar.copy}</p>
@@ -118,6 +135,29 @@ function About() {
 
           <div className="about-section">
             <TeamMembers />
+          </div>
+
+          <div className="about-section">
+            <div className="donation-section">
+              <h2 className="donation-title">
+                Support <span className="brand-accent">A</span>
+                <span className="brand-accent-yellow">G</span>
+                <span className="brand-accent-green">A</span>
+              </h2>
+              <p className="donation-text">
+                Invest in the students dedicated to Africa's future. Your gift
+                directly funds the programs and events that build our community
+                and lift up our voices.
+              </p>
+              <a
+                href="https://giving.mit.edu/search/node/2861476"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-donate"
+              >
+                Donate
+              </a>
+            </div>
           </div>
         </div>
       </section>

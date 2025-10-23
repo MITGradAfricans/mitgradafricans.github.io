@@ -16,11 +16,11 @@ function Home() {
         backgroundAlt="Massachusetts Institute of Technology Great Dome"
       >
         <h2 className="hero-headline">
-          Where{" "}
-          <span className="highlight">African scholarship</span> meets
-          <br />
+          Where <span className="highlight">African scholarship</span>,{" "}
           <span className="highlight-yellow">innovation </span>
-          and <span className="highlight-green">global influence</span>.
+          <br />
+          and <span className="highlight-green">global influence</span>{" "}
+          converge.
         </h2>
       </HeroSection>
 

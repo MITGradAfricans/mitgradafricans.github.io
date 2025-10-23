@@ -5,7 +5,7 @@ import { teamMembers } from "../constants/teamMembers";
 const TeamMembers: React.FC = () => (
   <section id="team" className="content-section">
     <div className="breakdown-section-header">
-      <h2 className="breakdown-section-title">Our Team</h2>
+      <h2 className="breakdown-section-title">Your Team</h2>
     </div>
     <div className="team-grid-container">
       <div className="team-grid">

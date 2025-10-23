@@ -50,7 +50,7 @@ const pillars = [
 const PillarSection: React.FC = () => (
   <section className="breakdown-section">
     <div className="breakdown-section-header">
-      <h2 className="breakdown-section-title">Our Pillars</h2>
+      <h2 className="breakdown-section-title">Our Three A's</h2>
     </div>
     <div className="pillars-grid">
       {pillars.map((pillar) => (

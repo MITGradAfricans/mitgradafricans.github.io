@@ -29,7 +29,11 @@ const TeamMember: React.FC<TeamMemberProps> = ({
       <p className="member-dept">{dept}</p>
       <p className="member-country">{country}</p>
       <div className="member-socials">
-        <a href={`mailto:${email}`} className="social-icon" aria-label={`Email ${name}`}>
+        <a
+          href={`mailto:${email}`}
+          className="social-icon"
+          aria-label={`Email ${name}`}
+        >
           <i className="fas fa-envelope"></i>
         </a>
         <a
@@ -42,14 +46,6 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           <i className="fab fa-linkedin-in"></i>
         </a>
       </div>
-    </div>
-    <div className="member-quick-links">
-      <a href={`mailto:${email}`} className="quick-link">
-        <i className="fas fa-envelope"></i>
-      </a>
-      <a href={linkedin} className="quick-link">
-        <i className="fab fa-linkedin"></i>
-      </a>
     </div>
   </div>
 );

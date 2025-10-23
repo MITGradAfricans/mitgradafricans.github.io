@@ -112,9 +112,15 @@
   cursor: pointer;
 }
 
-.nav-backdrop { display: none; }
-.nav-drawer { display: none; }
-.nav-close { display: none; }
+.nav-backdrop {
+  display: none;
+}
+.nav-drawer {
+  display: none;
+}
+.nav-close {
+  display: none;
+}
 
 .nav-link {
   text-decoration: none;

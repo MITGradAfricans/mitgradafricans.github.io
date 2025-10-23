@@ -31,7 +31,11 @@ function CtaSection() {
         </div>
       </div>
       <div className="cta-content">
-        <h2>Join Our Community</h2>
+        <h2>
+          No more Brain Drain.
+          <br />
+          Join the Brain Gain.
+        </h2>
         <p>
           Just click below and connect with us to start your journey with MIT
           AGA.

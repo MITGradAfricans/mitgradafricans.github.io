@@ -10,7 +10,7 @@ function Footer() {
           <img src={agaLogo} alt="MIT AGA Logo" className="footer-aga-logo" />
           <h3>MIT African Graduate Association</h3>
           <p>
-            Where African scholarship meets innovation and global influence.
+            Where African scholarship, innovation and global influence converge.
           </p>
           <div className="social-links">
             <a

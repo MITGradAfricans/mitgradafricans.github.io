@@ -11,7 +11,7 @@ export const teamMembers: TeamMemberProps[] = [
   {
     name: "Abimbola Oluwade",
     role: "Co-President",
-    dept: "Mechanical Engineering",
+    dept: "PhD Candidate, Mechanical Engineering",
     country: "🇳🇬 Nigeria",
     photo: abimbolaPhoto,
     email: "aoluwade@mit.edu",
@@ -20,7 +20,7 @@ export const teamMembers: TeamMemberProps[] = [
   {
     name: "Jonas Sog",
     role: "Co-President",
-    dept: "Mechanical Engineering",
+    dept: "PhD Candidate, Mechanical Engineering",
     country: "🇹🇬 Togo",
     photo: jonasPhoto,
     email: "jonassog@mit.edu",
@@ -29,7 +29,7 @@ export const teamMembers: TeamMemberProps[] = [
   {
     name: "Naomi Kirimi",
     role: "Treasurer",
-    dept: "Electrical Engineering & Computer Science",
+    dept: "BSc and MEng, Computer Science",
     country: "🇰🇪 Kenya",
     photo: naomiPhoto,
     email: "nkirimi@mit.edu",
@@ -38,7 +38,7 @@ export const teamMembers: TeamMemberProps[] = [
   {
     name: "Odinaka Kingsley Eze",
     role: "Secretary",
-    dept: "History, Anthropology, Science, Technology & Society",
+    dept: "PhD Candidate, History, Anthropology, Science, Technology & Society",
     country: "🇳🇬 Nigeria",
     photo: akaPhoto,
     email: "akaeze@mit.edu",
@@ -63,7 +63,7 @@ export const teamMembers: TeamMemberProps[] = [
   {
     name: "Gianna Torpey",
     role: "Webmaster",
-    dept: "Electrical Engineering & Computer Science",
+    dept: "BSc and MEng, Computer Science",
     country: "🇬🇭 Ghana",
     photo: giannaPhoto,
     email: "gtorpey@mit.edu",

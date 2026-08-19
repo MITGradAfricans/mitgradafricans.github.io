@@ -14,30 +14,26 @@ function Footer() {
           </p>
           <div className="social-links">
             <a
-              href="https://www.facebook.com/mitaga"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a
               href="https://twitter.com/mitaga"
               target="_blank"
               rel="noreferrer"
+              aria-label="MIT AGA on Twitter"
             >
               <i className="fab fa-twitter"></i>
             </a>
             <a
-              href="https://www.linkedin.com/company/mit-african-graduate-association/?viewAsMember=true"
+              href="https://www.linkedin.com/company/mit-aga/?viewAsMember=true"
               target="_blank"
               rel="noreferrer"
+              aria-label="MIT AGA on LinkedIn"
             >
               <i className="fab fa-linkedin"></i>
             </a>
             <a
-              href="https://www.instagram.com/mitaga"
+              href="https://www.instagram.com/mit.aga.ig/"
               target="_blank"
               rel="noreferrer"
+              aria-label="MIT AGA on Instagram"
             >
               <i className="fab fa-instagram"></i>
             </a>

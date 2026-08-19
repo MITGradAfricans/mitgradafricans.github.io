@@ -93,7 +93,7 @@ function Events() {
 
             <div className="gallery-button-container">
               <a
-                href="https://www.instagram.com/mitaga"
+                href="https://www.instagram.com/mit.aga.ig/"
                 className="btn btn-primary btn-gallery"
                 target="_blank"
                 rel="noreferrer"

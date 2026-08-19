@@ -3,7 +3,7 @@ import jonasPhoto from "../assets/images/team/jonas.jpg";
 import giannaPhoto from "../assets/images/team/gianna.png";
 import abimbolaPhoto from "../assets/images/team/abimbola.jpeg";
 import akaPhoto from "../assets/images/team/aka.jpeg";
-import naomiPhoto from "../assets/images/placeholder_woman.png";
+import naomiPhoto from "../assets/images/team/naomi.png";
 
 export const teamMembers: TeamMemberProps[] = [
   {

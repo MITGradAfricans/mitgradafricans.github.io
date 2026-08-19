@@ -14,6 +14,12 @@ function Footer() {
           </p>
           <div className="social-links">
             <a
+              href="mailto:aga-exec@mit.edu"
+              aria-label="Email MIT AGA at aga-exec@mit.edu"
+            >
+              <i className="fas fa-envelope"></i>
+            </a>
+            <a
               href="https://www.linkedin.com/company/mit-aga/?viewAsMember=true"
               target="_blank"
               rel="noreferrer"

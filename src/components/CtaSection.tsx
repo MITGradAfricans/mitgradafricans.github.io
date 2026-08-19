@@ -37,7 +37,7 @@ function CtaSection() {
           Join the Brain Gain.
         </h2>
         <p>
-          Just click below and connect with us to start your journey with MIT
+          Click below and connect with us to start your journey with MIT
           AGA.
         </p>
         <div className="cta-buttons">

@@ -4,6 +4,8 @@ import giannaPhoto from "../assets/images/team/gianna.png";
 import abimbolaPhoto from "../assets/images/team/abimbola.jpeg";
 import akaPhoto from "../assets/images/team/aka.jpeg";
 import naomiPhoto from "../assets/images/team/naomi.png";
+import michellePhoto from "../assets/images/team/michelle.png";
+import alainPhoto from "../assets/images/team/alain.png";
 
 export const teamMembers: TeamMemberProps[] = [
   {
@@ -41,6 +43,22 @@ export const teamMembers: TeamMemberProps[] = [
     photo: akaPhoto,
     email: "akaeze@mit.edu",
     linkedin: "https://www.linkedin.com/in/odinaka-eze-310217153/",
+  },
+  {
+    name: "Michelle Osiro",
+    role: "Treasurer",
+    dept: "PhD Candidate, Biology",
+    country: "🇰🇪 Kenya",
+    photo: michellePhoto,
+    linkedin: "https://www.linkedin.com/in/michelle-osiro-637b411b2",
+  },
+  {
+    name: "Alain Kangabire",
+    role: "Communications",
+    dept: "PhD Candidate, Mathematics",
+    country: "🇧🇮 Burundi",
+    photo: alainPhoto,
+    linkedin: "https://www.linkedin.com/in/alain-kangabire-20503a144",
   },
   {
     name: "Gianna Torpey",

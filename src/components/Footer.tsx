@@ -14,14 +14,6 @@ function Footer() {
           </p>
           <div className="social-links">
             <a
-              href="https://twitter.com/mitaga"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="MIT AGA on Twitter"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a
               href="https://www.linkedin.com/company/mit-aga/?viewAsMember=true"
               target="_blank"
               rel="noreferrer"

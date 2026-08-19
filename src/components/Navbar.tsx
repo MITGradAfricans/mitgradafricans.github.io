@@ -7,7 +7,6 @@ type NavbarProps = React.HTMLAttributes<HTMLElement>;
 const NAV_ITEMS = [
   { to: "/", label: "Home", accent: "nav-red" },
   { to: "/about", label: "About Us", accent: "nav-yellow" },
-  { to: "/blog", label: "Our Blog", accent: "nav-green" },
   { to: "/resources", label: "Resources", accent: "nav-red" },
   { to: "/events", label: "Our Events", accent: "nav-yellow" },
   { to: "/faq", label: "FAQ", accent: "nav-green" },

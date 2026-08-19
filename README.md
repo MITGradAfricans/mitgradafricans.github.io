@@ -85,7 +85,7 @@ If the key is not available, users see “Our events calendar is being configure
 - `vite.config.ts` — Vite configuration (base path, plugins)
 - `package.json` — Scripts and dependencies
 
-Note: Some legacy `.html` files (e.g., `about.html`, `faq.html`) remain for historical reasons. The React app handles routes and redirects these to their corresponding paths.
+The React app is the source of truth for all pages. Legacy `.html` paths are redirected in `src/App.tsx`.
 
 ## Content Editing Guide
 

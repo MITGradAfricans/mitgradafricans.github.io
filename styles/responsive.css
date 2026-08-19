@@ -297,9 +297,6 @@
   .member-socials {
     gap: 1rem;
   }
-  .member-quick-links {
-    display: none;
-  }
 
   .cta-buttons {
     flex-direction: column;

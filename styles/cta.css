@@ -120,6 +120,14 @@
 }
 
 @media (max-width: 768px) {
+  .cta-section::before {
+    animation: scroll-top 30s linear infinite;
+  }
+
+  .cta-section::after {
+    animation: scroll-bottom 30s linear infinite;
+  }
+
   .cta-buttons .btn {
     min-width: auto;
     padding: 0.9rem 1.5rem;

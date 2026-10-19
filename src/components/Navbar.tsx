@@ -24,12 +24,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
           key={to}
           to={to}
           className={({ isActive }) =>
-            [
-              "nav-link",
-              accent,
-              extraClass,
-              isActive ? "active" : "",
-            ]
+            ["nav-link", accent, extraClass, isActive ? "active" : ""]
               .filter(Boolean)
               .join(" ")
           }
@@ -57,7 +52,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
 
     return (
       <nav ref={ref} className={navClasses} {...rest}>
-        <div className="nav-brand">
+        <NavLink to="/" className="nav-brand" onClick={closeMenu}>
           <img src={agaLogo} alt="MIT AGA Logo" className="nav-logo" />
           <h1 className="brand-name">
             MIT
@@ -68,7 +63,7 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
             <br />
             <span className="brand-accent-green">A</span>ssociation
           </h1>
-        </div>
+        </NavLink>
         <button
           className="nav-toggle"
           aria-label="Toggle navigation menu"
@@ -97,14 +92,18 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
           aria-label="Primary navigation"
           aria-hidden={!open}
         >
-          <button className="nav-close" aria-label="Close menu" onClick={closeMenu}>
+          <button
+            className="nav-close"
+            aria-label="Close menu"
+            onClick={closeMenu}
+          >
             <i className="fas fa-xmark" aria-hidden="true"></i>
           </button>
           {renderNavLinks("nav-link--drawer")}
         </aside>
       </nav>
     );
-  },
+  }
 );
 
 Navbar.displayName = "Navbar";

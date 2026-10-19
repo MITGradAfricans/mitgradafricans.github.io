@@ -134,13 +134,6 @@
   font-family: "arbotek", sans-serif;
 }
 
-.emoji-flag {
-  height: 1em;
-  width: auto;
-  vertical-align: -0.125em;
-  margin: 0 0.15em;
-}
-
 .event-partner {
   color: var(--aga-yellow);
   font-weight: 600;

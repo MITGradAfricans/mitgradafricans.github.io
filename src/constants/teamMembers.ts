@@ -6,6 +6,7 @@ import akaPhoto from "../assets/images/team/aka.jpeg";
 import naomiPhoto from "../assets/images/team/naomi.png";
 import michellePhoto from "../assets/images/team/michelle.png";
 import alainPhoto from "../assets/images/team/alain.png";
+import rhodaPhoto from "../assets/images/team/rhoda.png";
 
 export const teamMembers: TeamMemberProps[] = [
   {
@@ -25,15 +26,6 @@ export const teamMembers: TeamMemberProps[] = [
     photo: jonasPhoto,
     email: "jonassog@mit.edu",
     linkedin: "https://www.linkedin.com/in/jsog/",
-  },
-  {
-    name: "Naomi Kirimi",
-    role: "Treasurer",
-    dept: "BSc and MEng, Computer Science",
-    country: "🇰🇪 Kenya",
-    photo: naomiPhoto,
-    email: "nkirimi@mit.edu",
-    linkedin: "https://www.linkedin.com/in/naomi-k-7bb100183/",
   },
   {
     name: "Odinaka Kingsley Eze",
@@ -59,6 +51,25 @@ export const teamMembers: TeamMemberProps[] = [
     country: "🇧🇮 Burundi",
     photo: alainPhoto,
     linkedin: "https://www.linkedin.com/in/alain-kangabire-20503a144",
+  },
+  {
+    name: "Rhoda",
+    role: "Event Organizer",
+    dept: "Masters in City Planning, DUSP",
+    country: "🇬🇭 Ghana",
+    photo: rhodaPhoto,
+  },
+];
+
+export const pastTeamMembers: TeamMemberProps[] = [
+  {
+    name: "Naomi Kirimi",
+    role: "Treasurer",
+    dept: "BSc and MEng, Computer Science",
+    country: "🇰🇪 Kenya",
+    photo: naomiPhoto,
+    email: "nkirimi@mit.edu",
+    linkedin: "https://www.linkedin.com/in/naomi-k-7bb100183/",
   },
   {
     name: "Gianna Torpey",

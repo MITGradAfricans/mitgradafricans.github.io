@@ -1,6 +1,6 @@
 import React from "react";
 import TeamMember from "./TeamMember";
-import { teamMembers } from "../constants/teamMembers";
+import { pastTeamMembers, teamMembers } from "../constants/teamMembers";
 
 const TeamMembers: React.FC = () => (
   <section id="team" className="content-section">
@@ -13,8 +13,19 @@ const TeamMembers: React.FC = () => (
           <TeamMember key={member.name} {...member} />
         ))}
       </div>
+
+      {pastTeamMembers.length > 0 && (
+        <div className="past-team">
+          <h3 className="past-team-title">Past Exec Members</h3>
+          <div className="team-grid team-grid--past">
+            {pastTeamMembers.map((member) => (
+              <TeamMember key={member.name} {...member} />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
-    </section>
-  );
+  </section>
+);
 
 export default TeamMembers;

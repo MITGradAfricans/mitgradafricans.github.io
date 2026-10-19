@@ -24,9 +24,11 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => (
       <h3 className="event-title" style={{ color: "var(--aga-red)" }}>
         <FlagText text={event.title} />
       </h3>
-      <p className="event-description">
-        <FlagText text={event.description} />
-      </p>
+      {event.description && (
+        <p className="event-description">
+          <FlagText text={event.description} />
+        </p>
+      )}
       <div className="event-meta">
         <span className="event-time" style={{ color: "var(--aga-green)" }}>
           <i

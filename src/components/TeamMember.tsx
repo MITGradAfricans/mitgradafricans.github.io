@@ -1,4 +1,5 @@
 import React from "react";
+import FlagText from "./FlagText";
 
 export interface TeamMemberProps {
   name: string;
@@ -27,7 +28,9 @@ const TeamMember: React.FC<TeamMemberProps> = ({
       <h3>{name}</h3>
       <p className="member-role">{role}</p>
       <p className="member-dept">{dept}</p>
-      <p className="member-country">{country}</p>
+      <p className="member-country">
+        <FlagText text={country} />
+      </p>
       {(email || linkedin) && (
         <div className="member-socials">
           {email && (

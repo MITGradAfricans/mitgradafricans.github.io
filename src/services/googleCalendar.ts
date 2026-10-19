@@ -89,7 +89,7 @@ export async function fetchUpcomingEvents(): Promise<UpcomingEvent[]> {
       day,
       month,
       title: event.summary ?? "Untitled event",
-      description: event.description ?? "Details coming soon.",
+      description: event.description ?? "",
       time: formatTime(startDate),
       venue: event.location ?? "",
     };

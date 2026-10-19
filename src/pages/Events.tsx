@@ -79,6 +79,7 @@ function Events() {
               </div>
             </div>
 
+            {/* Google Calendar embed hidden for now.
             <div className="calendar-container">
               <div className="calendar-wrapper">
                 <iframe
@@ -90,6 +91,7 @@ function Events() {
                 ></iframe>
               </div>
             </div>
+            */}
 
             <div className="gallery-button-container">
               <a

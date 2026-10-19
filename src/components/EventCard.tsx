@@ -1,4 +1,5 @@
 import React from "react";
+import FlagText from "./FlagText";
 
 export type UpcomingEvent = {
   day: string;
@@ -21,9 +22,11 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => (
     </div>
     <div className="event-details">
       <h3 className="event-title" style={{ color: "var(--aga-red)" }}>
-        {event.title}
+        <FlagText text={event.title} />
       </h3>
-      <p className="event-description">{event.description}</p>
+      <p className="event-description">
+        <FlagText text={event.description} />
+      </p>
       <div className="event-meta">
         <span className="event-time" style={{ color: "var(--aga-green)" }}>
           <i

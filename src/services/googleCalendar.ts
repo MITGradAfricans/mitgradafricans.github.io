@@ -70,7 +70,7 @@ export async function fetchUpcomingEvents(): Promise<UpcomingEvent[]> {
   url.searchParams.set("singleEvents", "true");
   url.searchParams.set("orderBy", "startTime");
   url.searchParams.set("timeMin", new Date().toISOString());
-  url.searchParams.set("maxResults", "6");
+  url.searchParams.set("maxResults", "2");
 
   const response = await fetch(url.toString());
 

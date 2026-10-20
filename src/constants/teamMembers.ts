@@ -53,7 +53,7 @@ export const teamMembers: TeamMemberProps[] = [
     linkedin: "https://www.linkedin.com/in/alain-kangabire-20503a144",
   },
   {
-    name: "Rhoda",
+    name: "Rhoda Osei-Nkwantabisa",
     role: "Event Organizer",
     dept: "Masters in City Planning, DUSP",
     country: "🇬🇭 Ghana",
